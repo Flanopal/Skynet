@@ -1,3 +1,5 @@
+-- from nota_hlaa_2019b_common
+
 local sensorInfo = {
 	name = "MapCanyons",
 	desc = "Maps terrain as grid with granularity of certain height (between minHeight and maxHeight). Storing points in list with unified height (= maxHeight).",
