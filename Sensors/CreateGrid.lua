@@ -1,3 +1,4 @@
+-- from nota_hlaa_2019b_common
 local sensorInfo = {
 	name = "CreateGrid",
 	desc = "Creates grid of points where every point is stored as key with his neighbours (in range) as values",
