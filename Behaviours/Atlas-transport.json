@@ -1,0 +1,175 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 246
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "atlas"
+	}, {
+		"command": "Variable",
+		"name": "transportTable"
+	} ],
+	"outputs": [],
+	"properties": {
+		"19hcLVR3ZK0pIwN2aACV9fJlov8LElVp": {
+			"height": 112,
+			"title": "Skynet.UnloadUnit",
+			"width": 249,
+			"x": 912,
+			"y": 195
+		},
+		"3cj9pXU8TD5aAzCU6ZxXRZngQUf7ZSjD": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 728,
+			"y": -3
+		},
+		"NsXErq7FS1J5lDUeAMrolHqSZJ9QOxFs": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 283,
+			"y": 24
+		},
+		"emou1afLIo82ZiJugy1EUpt47ucMQWfN": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 216,
+			"x": 448,
+			"y": 13
+		},
+		"nAznb0qjtgmgqPdJ3p6121sNPaGM3hJG": {
+			"height": 92,
+			"title": "Skynet.LoadUnit",
+			"width": 210,
+			"x": 910,
+			"y": -6
+		},
+		"wAqfbmBJCah5lQlQAtyeHwGNPELUZRic": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 729,
+			"y": 53
+		},
+		"xWBhLHqTtN5riVZxiDSuAYQM35GBDMuU": {
+			"height": 113,
+			"title": "Skynet.MoveTo",
+			"width": 390,
+			"x": 910,
+			"y": -116
+		},
+		"yc8LUyncMLw8jf6HfuNby85uJ40HFbge": {
+			"height": 113,
+			"title": "Skynet.MoveTo",
+			"width": 390,
+			"x": 910,
+			"y": 84
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "xWBhLHqTtN5riVZxiDSuAYQM35GBDMuU",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "atlas"
+					}, {
+						"name": "position",
+						"value": "Sprind.GetUnitPosition(transportTable[\"unit\"])"
+					}, {
+						"name": "tolerance",
+						"value": "100"
+					}, {
+						"name": "scriptName",
+						"value": "Skynet.MoveTo"
+					} ],
+					"scriptName": "Skynet.MoveTo"
+				}, {
+					"children": [],
+					"id": "nAznb0qjtgmgqPdJ3p6121sNPaGM3hJG",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "transporter",
+						"value": "atlas"
+					}, {
+						"name": "unit",
+						"value": "transportTable[\"unit\"]"
+					}, {
+						"name": "scriptName",
+						"value": "Skynet.LoadUnit"
+					} ],
+					"scriptName": "Skynet.LoadUnit"
+				}, {
+					"children": [],
+					"id": "yc8LUyncMLw8jf6HfuNby85uJ40HFbge",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "atlas"
+					}, {
+						"name": "position",
+						"value": "transportTable[\"toPos\"]"
+					}, {
+						"name": "tolerance",
+						"value": "100"
+					}, {
+						"name": "scriptName",
+						"value": "Skynet.MoveTo"
+					} ],
+					"scriptName": "Skynet.MoveTo"
+				}, {
+					"children": [],
+					"id": "19hcLVR3ZK0pIwN2aACV9fJlov8LElVp",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "transporter",
+						"value": "atlas"
+					}, {
+						"name": "position",
+						"value": "transportTable[\"toPos\"]"
+					}, {
+						"name": "unit",
+						"value": "transportTable[\"unit\"]"
+					}, {
+						"name": "scriptName",
+						"value": "Skynet.UnloadUnit"
+					} ],
+					"scriptName": "Skynet.UnloadUnit"
+				} ],
+				"id": "3cj9pXU8TD5aAzCU6ZxXRZngQUf7ZSjD",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "wAqfbmBJCah5lQlQAtyeHwGNPELUZRic",
+				"nodeType": "success",
+				"parameters": []
+			} ],
+			"id": "emou1afLIo82ZiJugy1EUpt47ucMQWfN",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "transportTable[\"unit\"] ~= nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		} ],
+		"id": "NsXErq7FS1J5lDUeAMrolHqSZJ9QOxFs",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}

@@ -22,6 +22,13 @@
 			"x": 250,
 			"y": 24
 		},
+		"4etX2ZH5YQhoziuXwjZUh3OM3j5kFNA0": {
+			"height": 112,
+			"title": "Skynet.MoveTo",
+			"width": 264,
+			"x": 1435,
+			"y": 178
+		},
 		"4nxI9D5MVqXbzZjbNBQEsAmBNViCJoq6": {
 			"height": 74,
 			"title": "echo",
@@ -61,15 +68,15 @@
 			"height": 92,
 			"title": "store",
 			"width": 212,
-			"x": 2259,
-			"y": 4
+			"x": 2252,
+			"y": -24
 		},
-		"d83glvxcrXzkyWiQjcdRottl01ThiFHE": {
-			"height": 74,
-			"title": "echo",
-			"width": 344,
+		"Z51sdQEmDW7hiHCFdx2HQy2b02ZMRJSs": {
+			"height": 112,
+			"title": "Skynet.MoveTo",
+			"width": 264,
 			"x": 1916,
-			"y": 116
+			"y": 120
 		},
 		"gu4Le5ohBVLhUX5gJRDO7eES8TpMOl7g": {
 			"height": 59,
@@ -120,13 +127,6 @@
 			"x": 621,
 			"y": 20
 		},
-		"wYzWxCd4HxEon7guYnkowfX8c9Qnm9SZ": {
-			"height": 74,
-			"title": "echo",
-			"width": 344,
-			"x": 1435,
-			"y": 179
-		},
 		"yMmePTgE2Ar0m6Uu25AvZWduqIRX0s1X": {
 			"height": 60,
 			"title": "Collect trash",
@@ -138,8 +138,8 @@
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 2257,
-			"y": 94
+			"x": 2252,
+			"y": 62
 		}
 	},
 	"roles": [ {
@@ -243,16 +243,22 @@
 									} ]
 								}, {
 									"children": [],
-									"id": "d83glvxcrXzkyWiQjcdRottl01ThiFHE",
+									"id": "Z51sdQEmDW7hiHCFdx2HQy2b02ZMRJSs",
 									"nodeType": "luaCommand",
 									"parameters": [ {
-										"name": "msg",
-										"value": "MoveTo(FARC, lineInfo[currentLinePoint])"
+										"name": "unit",
+										"value": "FARC"
+									}, {
+										"name": "position",
+										"value": "lineInfo[currentLinePoint]"
+									}, {
+										"name": "tolerance",
+										"value": "100"
 									}, {
 										"name": "scriptName",
-										"value": "echo"
+										"value": "Skynet.MoveTo"
 									} ],
-									"scriptName": "echo"
+									"scriptName": "Skynet.MoveTo"
 								} ],
 								"id": "MzEUCEPOSmaDdgX9GqEDs6ZHcPQQYS1q",
 								"nodeType": "sequence",
@@ -289,16 +295,22 @@
 							"scriptName": "store"
 						}, {
 							"children": [],
-							"id": "wYzWxCd4HxEon7guYnkowfX8c9Qnm9SZ",
+							"id": "4etX2ZH5YQhoziuXwjZUh3OM3j5kFNA0",
 							"nodeType": "luaCommand",
 							"parameters": [ {
-								"name": "msg",
-								"value": "MoveTo(FARC, lineInfo[currentLinePoint])"
+								"name": "unit",
+								"value": "FARC"
+							}, {
+								"name": "position",
+								"value": "lineInfo[currentLinePoint]"
+							}, {
+								"name": "tolerance",
+								"value": "100"
 							}, {
 								"name": "scriptName",
-								"value": "echo"
+								"value": "Skynet.MoveTo"
 							} ],
-							"scriptName": "echo"
+							"scriptName": "Skynet.MoveTo"
 						} ],
 						"id": "mBB0slHEXuglPFbj3sO0qAhC2WBmQQ65",
 						"nodeType": "sequence",
