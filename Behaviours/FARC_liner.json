@@ -22,13 +22,6 @@
 			"x": 250,
 			"y": 24
 		},
-		"4etX2ZH5YQhoziuXwjZUh3OM3j5kFNA0": {
-			"height": 112,
-			"title": "Skynet.MoveTo",
-			"width": 264,
-			"x": 1435,
-			"y": 178
-		},
 		"4nxI9D5MVqXbzZjbNBQEsAmBNViCJoq6": {
 			"height": 74,
 			"title": "echo",
@@ -68,15 +61,15 @@
 			"height": 92,
 			"title": "store",
 			"width": 212,
-			"x": 2252,
-			"y": -24
+			"x": 2259,
+			"y": 4
 		},
-		"Z51sdQEmDW7hiHCFdx2HQy2b02ZMRJSs": {
-			"height": 112,
-			"title": "Skynet.MoveTo",
-			"width": 264,
+		"d83glvxcrXzkyWiQjcdRottl01ThiFHE": {
+			"height": 74,
+			"title": "echo",
+			"width": 344,
 			"x": 1916,
-			"y": 120
+			"y": 116
 		},
 		"gu4Le5ohBVLhUX5gJRDO7eES8TpMOl7g": {
 			"height": 59,
@@ -102,7 +95,7 @@
 		"lOkaN3tj22kG5uJclgKgeKxXEm55X9rA": {
 			"height": 94,
 			"title": "store",
-			"width": 486,
+			"width": 540,
 			"x": 879,
 			"y": -76
 		},
@@ -116,7 +109,7 @@
 		"phtpIMl4cAtU7XCMiVDK8VMPEjdaUIhU": {
 			"height": 94,
 			"title": "store",
-			"width": 431,
+			"width": 471,
 			"x": 1433,
 			"y": -108
 		},
@@ -126,6 +119,13 @@
 			"width": 202,
 			"x": 621,
 			"y": 20
+		},
+		"wYzWxCd4HxEon7guYnkowfX8c9Qnm9SZ": {
+			"height": 74,
+			"title": "echo",
+			"width": 344,
+			"x": 1435,
+			"y": 179
 		},
 		"yMmePTgE2Ar0m6Uu25AvZWduqIRX0s1X": {
 			"height": 60,
@@ -138,8 +138,8 @@
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 2252,
-			"y": 62
+			"x": 2257,
+			"y": 94
 		}
 	},
 	"roles": [ {
@@ -173,7 +173,7 @@
 						"value": "seenEnemy"
 					}, {
 						"name": "value",
-						"value": "Skynet.GetDangerInRadius(Spring.GetUnitPosition(FARC),500)"
+						"value": "Skynet.GetDangerInRadius(Spring.GetUnitPosition(FARC),500, teamID)"
 					}, {
 						"name": "scriptName",
 						"value": "store"
@@ -190,7 +190,7 @@
 								"value": "trash"
 							}, {
 								"name": "value",
-								"value": "Skynet.GetTrashAtLinePoint(lineInfo, currentLinePoint)"
+								"value": "Skynet.GetTrashAtLinePoint(lineInfo, currentLinePoint, 500)"
 							}, {
 								"name": "scriptName",
 								"value": "store"
@@ -243,22 +243,16 @@
 									} ]
 								}, {
 									"children": [],
-									"id": "Z51sdQEmDW7hiHCFdx2HQy2b02ZMRJSs",
+									"id": "d83glvxcrXzkyWiQjcdRottl01ThiFHE",
 									"nodeType": "luaCommand",
 									"parameters": [ {
-										"name": "unit",
-										"value": "FARC"
-									}, {
-										"name": "position",
-										"value": "lineInfo[currentLinePoint]"
-									}, {
-										"name": "tolerance",
-										"value": "100"
+										"name": "msg",
+										"value": "MoveTo(FARC, lineInfo[currentLinePoint])"
 									}, {
 										"name": "scriptName",
-										"value": "Skynet.MoveTo"
+										"value": "echo"
 									} ],
-									"scriptName": "Skynet.MoveTo"
+									"scriptName": "echo"
 								} ],
 								"id": "MzEUCEPOSmaDdgX9GqEDs6ZHcPQQYS1q",
 								"nodeType": "sequence",
@@ -295,22 +289,16 @@
 							"scriptName": "store"
 						}, {
 							"children": [],
-							"id": "4etX2ZH5YQhoziuXwjZUh3OM3j5kFNA0",
+							"id": "wYzWxCd4HxEon7guYnkowfX8c9Qnm9SZ",
 							"nodeType": "luaCommand",
 							"parameters": [ {
-								"name": "unit",
-								"value": "FARC"
-							}, {
-								"name": "position",
-								"value": "lineInfo[currentLinePoint]"
-							}, {
-								"name": "tolerance",
-								"value": "100"
+								"name": "msg",
+								"value": "MoveTo(FARC, lineInfo[currentLinePoint])"
 							}, {
 								"name": "scriptName",
-								"value": "Skynet.MoveTo"
+								"value": "echo"
 							} ],
-							"scriptName": "Skynet.MoveTo"
+							"scriptName": "echo"
 						} ],
 						"id": "mBB0slHEXuglPFbj3sO0qAhC2WBmQQ65",
 						"nodeType": "sequence",
