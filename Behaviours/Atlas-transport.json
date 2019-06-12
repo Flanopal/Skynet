@@ -8,10 +8,7 @@
 	},
 	"inputs": [ {
 		"command": "Variable",
-		"name": "atlas"
-	}, {
-		"command": "Variable",
-		"name": "transportTable"
+		"name": "transport"
 	} ],
 	"outputs": [],
 	"properties": {
@@ -19,57 +16,71 @@
 			"height": 112,
 			"title": "Skynet.UnloadUnit",
 			"width": 249,
-			"x": 912,
-			"y": 195
+			"x": 1178,
+			"y": 108
+		},
+		"1PN4p6sRKXGU1HXZ1uLbYwzrP6lPZMEo": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 541,
+			"y": 85
 		},
 		"3cj9pXU8TD5aAzCU6ZxXRZngQUf7ZSjD": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 728,
+			"x": 982,
 			"y": -3
 		},
 		"NsXErq7FS1J5lDUeAMrolHqSZJ9QOxFs": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 283,
+			"x": 537,
 			"y": 24
+		},
+		"ZRJEyi3nmYHnKgYPm1bMKefp5DlarnVY": {
+			"height": 92,
+			"title": "store",
+			"width": 200,
+			"x": 1182,
+			"y": 227
+		},
+		"blWj3MRXJjUpQZ5TspnyodTf0UjiQMje": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 306,
+			"y": 13
 		},
 		"emou1afLIo82ZiJugy1EUpt47ucMQWfN": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 216,
-			"x": 448,
+			"x": 702,
 			"y": 13
 		},
 		"nAznb0qjtgmgqPdJ3p6121sNPaGM3hJG": {
 			"height": 92,
 			"title": "Skynet.LoadUnit",
 			"width": 210,
-			"x": 910,
-			"y": -6
+			"x": 1179,
+			"y": -94
 		},
 		"wAqfbmBJCah5lQlQAtyeHwGNPELUZRic": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 729,
+			"x": 983,
 			"y": 53
-		},
-		"xWBhLHqTtN5riVZxiDSuAYQM35GBDMuU": {
-			"height": 113,
-			"title": "Skynet.MoveTo",
-			"width": 390,
-			"x": 910,
-			"y": -116
 		},
 		"yc8LUyncMLw8jf6HfuNby85uJ40HFbge": {
 			"height": 113,
 			"title": "Skynet.MoveTo",
 			"width": 390,
-			"x": 910,
-			"y": 84
+			"x": 1179,
+			"y": -3
 		}
 	},
 	"roles": [ {
@@ -80,96 +91,109 @@
 		"children": [ {
 			"children": [ {
 				"children": [ {
-					"children": [],
-					"id": "xWBhLHqTtN5riVZxiDSuAYQM35GBDMuU",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "unit",
-						"value": "atlas"
+					"children": [ {
+						"children": [],
+						"id": "nAznb0qjtgmgqPdJ3p6121sNPaGM3hJG",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "transporter",
+							"value": "atlas"
+						}, {
+							"name": "unit",
+							"value": "transport[\"unit\"]"
+						}, {
+							"name": "scriptName",
+							"value": "Skynet.LoadUnit"
+						} ],
+						"scriptName": "Skynet.LoadUnit"
 					}, {
-						"name": "position",
-						"value": "Sprind.GetUnitPosition(transportTable[\"unit\"])"
+						"children": [],
+						"id": "yc8LUyncMLw8jf6HfuNby85uJ40HFbge",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unit",
+							"value": "atlas"
+						}, {
+							"name": "position",
+							"value": "transport[\"toPos\"] "
+						}, {
+							"name": "tolerance",
+							"value": "100"
+						}, {
+							"name": "scriptName",
+							"value": "Skynet.MoveTo"
+						} ],
+						"scriptName": "Skynet.MoveTo"
 					}, {
-						"name": "tolerance",
-						"value": "100"
+						"children": [],
+						"id": "19hcLVR3ZK0pIwN2aACV9fJlov8LElVp",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "transporter",
+							"value": "atlas"
+						}, {
+							"name": "position",
+							"value": "transport[\"toPos\"]"
+						}, {
+							"name": "unit",
+							"value": "transport[\"unit\"]"
+						}, {
+							"name": "scriptName",
+							"value": "Skynet.UnloadUnit"
+						} ],
+						"scriptName": "Skynet.UnloadUnit"
 					}, {
-						"name": "scriptName",
-						"value": "Skynet.MoveTo"
+						"children": [],
+						"id": "ZRJEyi3nmYHnKgYPm1bMKefp5DlarnVY",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "transport[\"toPos\"]"
+						}, {
+							"name": "value",
+							"value": "nil"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
 					} ],
-					"scriptName": "Skynet.MoveTo"
+					"id": "3cj9pXU8TD5aAzCU6ZxXRZngQUf7ZSjD",
+					"nodeType": "sequence",
+					"parameters": []
 				}, {
 					"children": [],
-					"id": "nAznb0qjtgmgqPdJ3p6121sNPaGM3hJG",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "transporter",
-						"value": "atlas"
-					}, {
-						"name": "unit",
-						"value": "transportTable[\"unit\"]"
-					}, {
-						"name": "scriptName",
-						"value": "Skynet.LoadUnit"
-					} ],
-					"scriptName": "Skynet.LoadUnit"
-				}, {
-					"children": [],
-					"id": "yc8LUyncMLw8jf6HfuNby85uJ40HFbge",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "unit",
-						"value": "atlas"
-					}, {
-						"name": "position",
-						"value": "transportTable[\"toPos\"]"
-					}, {
-						"name": "tolerance",
-						"value": "100"
-					}, {
-						"name": "scriptName",
-						"value": "Skynet.MoveTo"
-					} ],
-					"scriptName": "Skynet.MoveTo"
-				}, {
-					"children": [],
-					"id": "19hcLVR3ZK0pIwN2aACV9fJlov8LElVp",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "transporter",
-						"value": "atlas"
-					}, {
-						"name": "position",
-						"value": "transportTable[\"toPos\"]"
-					}, {
-						"name": "unit",
-						"value": "transportTable[\"unit\"]"
-					}, {
-						"name": "scriptName",
-						"value": "Skynet.UnloadUnit"
-					} ],
-					"scriptName": "Skynet.UnloadUnit"
+					"id": "wAqfbmBJCah5lQlQAtyeHwGNPELUZRic",
+					"nodeType": "success",
+					"parameters": []
 				} ],
-				"id": "3cj9pXU8TD5aAzCU6ZxXRZngQUf7ZSjD",
-				"nodeType": "sequence",
-				"parameters": []
-			}, {
-				"children": [],
-				"id": "wAqfbmBJCah5lQlQAtyeHwGNPELUZRic",
-				"nodeType": "success",
-				"parameters": []
+				"id": "emou1afLIo82ZiJugy1EUpt47ucMQWfN",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "transport[\"toPos\"] ~= nil"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
 			} ],
-			"id": "emou1afLIo82ZiJugy1EUpt47ucMQWfN",
-			"nodeType": "luaCondition",
-			"parameters": [ {
-				"name": "expression",
-				"value": "transportTable[\"unit\"] ~= nil"
-			}, {
-				"name": "repeat",
-				"value": "false"
-			} ]
+			"id": "NsXErq7FS1J5lDUeAMrolHqSZJ9QOxFs",
+			"nodeType": "repeat",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "1PN4p6sRKXGU1HXZ1uLbYwzrP6lPZMEo",
+			"nodeType": "success",
+			"parameters": []
 		} ],
-		"id": "NsXErq7FS1J5lDUeAMrolHqSZJ9QOxFs",
-		"nodeType": "repeat",
-		"parameters": []
+		"id": "blWj3MRXJjUpQZ5TspnyodTf0UjiQMje",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "transport[\"atlas\"] ~= nil"
+		}, {
+			"name": "repeat",
+			"value": "true"
+		} ]
 	}
 }

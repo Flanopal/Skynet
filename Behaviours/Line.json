@@ -1,0 +1,190 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "units"
+	}, {
+		"command": "Variable",
+		"name": "points"
+	} ],
+	"outputs": [],
+	"properties": {
+		"2irMHW3baoHBuc92zHMG7fuxzIKj5stR": {
+			"height": 151,
+			"title": "reference",
+			"width": 181,
+			"x": 897,
+			"y": -59
+		},
+		"EQGpp0E4gqNg0ZksY4hqnSbIDnOoKug8": {
+			"height": 110,
+			"title": "reference",
+			"width": 142,
+			"x": 1050,
+			"y": 94
+		},
+		"GQnivddYlOqF9n53q5HVWV57hZLWBr00": {
+			"height": 110,
+			"title": "reference",
+			"width": 142,
+			"x": 906,
+			"y": 180
+		},
+		"Ow2B60ErX1PmvCzm1LhXn1iBwaFi7CAP": {
+			"height": 94,
+			"title": "store",
+			"width": 222,
+			"x": 921,
+			"y": -260
+		},
+		"TzTzQ0homLvhKTHAs9UxWiX9tUp3trfS": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 725,
+			"y": -178
+		},
+		"Wlge9yznexGLlFjiKtAesf7oyCNui1gc": {
+			"height": 110,
+			"title": "reference",
+			"width": 142,
+			"x": 912,
+			"y": 325
+		},
+		"f120B1cqP09KiQvoXkocA7zh1w7IotJp": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 922,
+			"y": -166
+		},
+		"iTsveRPXmQzuUeH7lRxQet2K1xWLUG02": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 474,
+			"y": 13
+		},
+		"k2VFtTLi4DMMQW2yjk9ga9m1kwaor2Le": {
+			"height": 94,
+			"title": "store",
+			"width": 202,
+			"x": 476,
+			"y": -81
+		},
+		"xS0C1ImCIU8Ly0biALQ782FvSrhNKW4p": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 265,
+			"y": 17
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "k2VFtTLi4DMMQW2yjk9ga9m1kwaor2Le",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "lineInfo"
+			}, {
+				"name": "value",
+				"value": "InitLineInfo(points)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "Ow2B60ErX1PmvCzm1LhXn1iBwaFi7CAP",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "lineInfo[\"linePoint\"]"
+					}, {
+						"name": "value",
+						"value": "GetLinePoint(lineInfo)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "f120B1cqP09KiQvoXkocA7zh1w7IotJp",
+					"nodeType": "wait",
+					"parameters": [ {
+						"name": "time",
+						"value": 3
+					} ]
+				} ],
+				"id": "TzTzQ0homLvhKTHAs9UxWiX9tUp3trfS",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "2irMHW3baoHBuc92zHMG7fuxzIKj5stR",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.FARCS"
+				} ],
+				"referenceInputs": [ {
+					"name": "farcs",
+					"value": "units[\"farcs\"]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "EQGpp0E4gqNg0ZksY4hqnSbIDnOoKug8",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": ""
+				} ]
+			}, {
+				"children": [],
+				"id": "GQnivddYlOqF9n53q5HVWV57hZLWBr00",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": ""
+				} ]
+			}, {
+				"children": [],
+				"id": "Wlge9yznexGLlFjiKtAesf7oyCNui1gc",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": ""
+				} ]
+			} ],
+			"id": "iTsveRPXmQzuUeH7lRxQet2K1xWLUG02",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "xS0C1ImCIU8Ly0biALQ782FvSrhNKW4p",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

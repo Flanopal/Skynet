@@ -1,0 +1,170 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "farcs"
+	}, {
+		"command": "Variable",
+		"name": "lineInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"026m2FUV4sYqqYcRtBytGRfGV305Ke9I": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 278,
+			"y": 13
+		},
+		"10gXCtwKLOniVt9JPs3EJr7cFjeoeO1n": {
+			"height": 151,
+			"title": "reference",
+			"width": 197,
+			"x": 716,
+			"y": -15
+		},
+		"37ZFJHnRtfmdb0PyafGpMEs3ZtjM6BtH": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 952,
+			"y": -109
+		},
+		"Dg0d3j7tW9zToyeFPQbRH3l0TDBysUjM": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 540,
+			"y": 167
+		},
+		"WataVJXf1lf9C9Mttso4ms5uIdwU0JET": {
+			"height": 151,
+			"title": "reference",
+			"width": 197,
+			"x": 716,
+			"y": 135
+		},
+		"XcSIB367ZJuIHENK9JiRd9zEYIod0EQW": {
+			"height": 94,
+			"title": "store",
+			"width": 264,
+			"x": 953,
+			"y": -200
+		},
+		"Y8lBTagwLlYs2v6Vq0lCSztahIS3MoPh": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 714,
+			"y": -92
+		},
+		"ajVlAeV4eEThw6DaEVpl1Z82z3jLWVRH": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 537,
+			"y": -92
+		},
+		"sDrrguEgKTEnNpi3piRMHHEW9Sohizin": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 537,
+			"y": 17
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "XcSIB367ZJuIHENK9JiRd9zEYIod0EQW",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "checkAliveUnits"
+					}, {
+						"name": "value",
+						"value": "CheckAliveUnits(farcs,\"unit\")"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "37ZFJHnRtfmdb0PyafGpMEs3ZtjM6BtH",
+					"nodeType": "wait",
+					"parameters": [ {
+						"name": "time",
+						"value": 5
+					} ]
+				} ],
+				"id": "Y8lBTagwLlYs2v6Vq0lCSztahIS3MoPh",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "ajVlAeV4eEThw6DaEVpl1Z82z3jLWVRH",
+			"nodeType": "repeat",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "10gXCtwKLOniVt9JPs3EJr7cFjeoeO1n",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.FARC_liner"
+				} ],
+				"referenceInputs": [ {
+					"name": "FARCInfo",
+					"value": "farcs[1]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			} ],
+			"id": "sDrrguEgKTEnNpi3piRMHHEW9Sohizin",
+			"nodeType": "repeat",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "WataVJXf1lf9C9Mttso4ms5uIdwU0JET",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.FARC_liner"
+				} ],
+				"referenceInputs": [ {
+					"name": "FARCInfo",
+					"value": "farcs[2]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			} ],
+			"id": "Dg0d3j7tW9zToyeFPQbRH3l0TDBysUjM",
+			"nodeType": "repeat",
+			"parameters": []
+		} ],
+		"id": "026m2FUV4sYqqYcRtBytGRfGV305Ke9I",
+		"nodeType": "parallel",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
+	}
+}
