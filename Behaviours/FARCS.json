@@ -53,7 +53,7 @@
 		"XcSIB367ZJuIHENK9JiRd9zEYIod0EQW": {
 			"height": 94,
 			"title": "store",
-			"width": 264,
+			"width": 311,
 			"x": 953,
 			"y": -200
 		},
@@ -95,7 +95,7 @@
 						"value": "checkAliveUnits"
 					}, {
 						"name": "value",
-						"value": "CheckAliveUnits(farcs,\"unit\")"
+						"value": "Skynet.CheckUnitsAlive(farcs,\"unit\")"
 					}, {
 						"name": "scriptName",
 						"value": "store"

@@ -22,13 +22,6 @@
 			"x": 494,
 			"y": 24
 		},
-		"4nxI9D5MVqXbzZjbNBQEsAmBNViCJoq6": {
-			"height": 74,
-			"title": "echo",
-			"width": 239,
-			"x": 1922,
-			"y": -13
-		},
 		"9XmS1uOM8IpooCrCazY8uFDThho9SzOG": {
 			"height": 90,
 			"title": "luaCondition",
@@ -78,6 +71,13 @@
 			"x": 2503,
 			"y": 4
 		},
+		"aSpkbYt5uYp4RTSdbbu1B2qdDzS8Vb3j": {
+			"height": 112,
+			"title": "Skynet.MoveTo",
+			"width": 265,
+			"x": 1683,
+			"y": 183
+		},
 		"cHVE406kX4DUv2kTYznyBihCEogXFmNn": {
 			"height": 92,
 			"title": "store",
@@ -85,12 +85,12 @@
 			"x": 689,
 			"y": -163
 		},
-		"d83glvxcrXzkyWiQjcdRottl01ThiFHE": {
-			"height": 74,
-			"title": "echo",
-			"width": 344,
-			"x": 2160,
-			"y": 116
+		"eUB1ASYu3SK1cmjOQQPDpMlMdNxObObo": {
+			"height": 112,
+			"title": "Skynet.MoveTo",
+			"width": 265,
+			"x": 2159,
+			"y": 115
 		},
 		"gu4Le5ohBVLhUX5gJRDO7eES8TpMOl7g": {
 			"height": 59,
@@ -120,6 +120,13 @@
 			"x": 1123,
 			"y": -76
 		},
+		"lfBFIyi9npbYLQLtJXg0GGSg4oMtEjoB": {
+			"height": 112,
+			"title": "Skynet.CollectFeatures",
+			"width": 292,
+			"x": 2165,
+			"y": -85
+		},
 		"mBB0slHEXuglPFbj3sO0qAhC2WBmQQ65": {
 			"height": 61,
 			"title": "Go behing front",
@@ -140,13 +147,6 @@
 			"width": 202,
 			"x": 865,
 			"y": 20
-		},
-		"wYzWxCd4HxEon7guYnkowfX8c9Qnm9SZ": {
-			"height": 74,
-			"title": "echo",
-			"width": 344,
-			"x": 1679,
-			"y": 179
 		},
 		"yMmePTgE2Ar0m6Uu25AvZWduqIRX0s1X": {
 			"height": 60,
@@ -227,7 +227,7 @@
 									"value": "trash"
 								}, {
 									"name": "value",
-									"value": "Skynet.GetTrashAtLinePoint(lineInfo, currentLinePoint, 500)"
+									"value": "Skynet.GetTrashAtLinePoint(lineInfo[currentLinePoint], 500)"
 								}, {
 									"name": "scriptName",
 									"value": "store"
@@ -236,16 +236,22 @@
 							}, {
 								"children": [ {
 									"children": [],
-									"id": "4nxI9D5MVqXbzZjbNBQEsAmBNViCJoq6",
+									"id": "lfBFIyi9npbYLQLtJXg0GGSg4oMtEjoB",
 									"nodeType": "luaCommand",
 									"parameters": [ {
-										"name": "msg",
-										"value": "collectTrash(FARC,trash)"
+										"name": "collector",
+										"value": "FARC"
+									}, {
+										"name": "position",
+										"value": "lineInfo[currentLinePoint]"
+									}, {
+										"name": "radius",
+										"value": "500"
 									}, {
 										"name": "scriptName",
-										"value": "echo"
+										"value": "Skynet.CollectFeatures"
 									} ],
-									"scriptName": "echo"
+									"scriptName": "Skynet.CollectFeatures"
 								}, {
 									"children": [ {
 										"children": [ {
@@ -280,16 +286,22 @@
 										} ]
 									}, {
 										"children": [],
-										"id": "d83glvxcrXzkyWiQjcdRottl01ThiFHE",
+										"id": "eUB1ASYu3SK1cmjOQQPDpMlMdNxObObo",
 										"nodeType": "luaCommand",
 										"parameters": [ {
-											"name": "msg",
-											"value": "MoveTo(FARC, lineInfo[currentLinePoint])"
+											"name": "unit",
+											"value": "FARC"
+										}, {
+											"name": "position",
+											"value": "lineInfo[currentLinePoint])"
+										}, {
+											"name": "tolerance",
+											"value": "50"
 										}, {
 											"name": "scriptName",
-											"value": "echo"
+											"value": "Skynet.MoveTo"
 										} ],
-										"scriptName": "echo"
+										"scriptName": "Skynet.MoveTo"
 									} ],
 									"id": "MzEUCEPOSmaDdgX9GqEDs6ZHcPQQYS1q",
 									"nodeType": "sequence",
@@ -326,16 +338,22 @@
 								"scriptName": "store"
 							}, {
 								"children": [],
-								"id": "wYzWxCd4HxEon7guYnkowfX8c9Qnm9SZ",
+								"id": "aSpkbYt5uYp4RTSdbbu1B2qdDzS8Vb3j",
 								"nodeType": "luaCommand",
 								"parameters": [ {
-									"name": "msg",
-									"value": "MoveTo(FARC, lineInfo[currentLinePoint])"
+									"name": "unit",
+									"value": "FARC"
+								}, {
+									"name": "position",
+									"value": "lineInfo[currentLinePoint])"
+								}, {
+									"name": "tolerance",
+									"value": "50"
 								}, {
 									"name": "scriptName",
-									"value": "echo"
+									"value": "Skynet.MoveTo"
 								} ],
-								"scriptName": "echo"
+								"scriptName": "Skynet.MoveTo"
 							} ],
 							"id": "mBB0slHEXuglPFbj3sO0qAhC2WBmQQ65",
 							"nodeType": "sequence",

@@ -39,7 +39,7 @@
 		"Ow2B60ErX1PmvCzm1LhXn1iBwaFi7CAP": {
 			"height": 94,
 			"title": "store",
-			"width": 222,
+			"width": 389,
 			"x": 921,
 			"y": -260
 		},
@@ -74,7 +74,7 @@
 		"k2VFtTLi4DMMQW2yjk9ga9m1kwaor2Le": {
 			"height": 94,
 			"title": "store",
-			"width": 202,
+			"width": 249,
 			"x": 476,
 			"y": -81
 		},
@@ -100,7 +100,7 @@
 				"value": "lineInfo"
 			}, {
 				"name": "value",
-				"value": "InitLineInfo(points)"
+				"value": "Skynet.InitLineInfo(points)"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -117,7 +117,7 @@
 						"value": "lineInfo[\"linePoint\"]"
 					}, {
 						"name": "value",
-						"value": "GetLinePoint(lineInfo)"
+						"value": "Skynet.GetLinePoint(lineInfo, enemyTeam, 500)"
 					}, {
 						"name": "scriptName",
 						"value": "store"
