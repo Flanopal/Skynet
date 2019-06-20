@@ -40,10 +40,10 @@ function Run(self, units, parameter)
 	Order(collector, CMD.RECLAIM,{position.x, position.y, position.z, radius},{})
 
 	-- jak poznat success? zavolat znovu
-	if Sensors.Skynet.GetTrashAtLinePoint(position, radius) == nil then
-		return SUCCESS
-	end
-	return RUNNING
+	--if Sensors.Skynet.GetTrashAtLinePoint(position, radius) == nil then
+	--	return SUCCESS
+	--end
+	return SUCCESS
 end
 
 function Reset(self)

@@ -35,7 +35,7 @@ end
 function Run(self, units, parameter)
 	local unit = parameter.unit
 	local target = parameter.position
-	local tolerance = parameted.tolerance
+	local tolerance = parameter.tolerance
 	local position = Vec3(Spring.GetUnitPosition(unit))
 
 	if position:Distance(target) < tolerance then

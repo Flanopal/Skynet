@@ -25,10 +25,8 @@ function getInfo()
 	}
 end
 
-
-local MoveOrder = Spring.GiveOrderToUnit
-
 local function ClearState(self)
+	self.commandGiven = false
 end
 
 -- @unload unit
@@ -37,7 +35,10 @@ function Run(self, units, parameter)
 	local position = parameter.position
 	local unit = parameter.unit
 
-	MoveOrder(transporter,CMD.UNLOAD_UNIT,{position.x,position.y,position.z},{})
+	if not self.commandGiven then
+		Spring.GiveOrderToUnit(transporter,CMD.UNLOAD_UNITS,{position.x, position.y, position.z, 300},{})
+		self.commandGiven = true
+	end
 
 	if Spring.GetUnitTransporter(unit) == nil then
 		return SUCCESS

@@ -23,7 +23,8 @@ function Run(self, units, parameter)
     local units = parameter.units
     local target = parameter.position
     for i=1, #units do
+		Spring.GiveOrderToUnit(units[i]["id"], CMD.FIRE_STATE, {1}, {})
         Spring.GiveOrderToUnit(units[i]["id"], CMD.ATTACK, {target.x, target.y, target.z}, {})
     end
-    return RUNNING
+    return SUCCESS
 end
