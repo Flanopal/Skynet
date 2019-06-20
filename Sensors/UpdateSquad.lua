@@ -1,29 +1,27 @@
 local sensorInfo = {
 	name = "UpdateSquad",
-	desc = "Updates squad, that is finds available zeuses from the pool",
+	desc = "Updates squad",
 	author = "AzGhort",
 	date = "2019-05-09"
 }
 
 local EVAL_PERIOD_DEFAULT = -1
 
-return function(sq, units, squadCount)
-    local squad = sq
-    if sq == nil then 
-        squad = {}
+return function(unitsMap, squad)
+    if squad.ready then
+        return squad
     end
-    local curSquad = #squad
-    if curSquad < squadCount then
-        for ID, info in pairs(units) do
-            if info["squad"] == nil then
-                squad[#squad + 1] = ID
-                curSquad = curSquad + 1
-                units[ID]["squad"] = true
-            end
-            if curSquad > squadCount-1 then
-                break
-            end
-        end
+    local squad = {}
+    if #unitsMap.lugers > 11 and #unitsMap.atlases > 12 and #unitsMap.radars > 0 then
+        squad.lugers = unitsMap.lugers
+        squad.lugers[#squad.lugers + 1] = unitsMap.radars[1]
+        squad.atlases = unitsMap.atlases
+        unitsMap.lugers = {}
+        unitsMap.atlases = {}
+        unitsMap.radars = {}
+        squad.ready = true
+        return squad
     end
+    squad.ready = false
     return squad
 end

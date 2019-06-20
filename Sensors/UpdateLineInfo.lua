@@ -36,5 +36,6 @@ return function(missionInfo)
     lineInfo["currentEnemyStrongpoint"] = firstEnemyStrongpoint
     lineInfo["lastStrongpoint"] = lastOurStrongpoint
     lineInfo["strongpoints"] = strongpoints
+    lineInfo["reclaimPoint"] = lastOurStrongpoint
     return lineInfo
 end

@@ -16,7 +16,7 @@ function checkUnitList(unitsMap, type, unit)
     end
     local info = {}
     info["id"] = unit
-    info["state"] = idle
+    info["state"] = "idle"
     unitsMap[type][#unitsMap[type] + 1] = info
 end
 
@@ -31,6 +31,8 @@ return function(unitsMap)
             checkUnitList(unitsMap, "atlases", ID)
         elseif name == "armseer" then
             checkUnitList(unitsMap, "radars", ID)
+        elseif name == "armfark" then
+            checkUnitList(unitsMap, "farks", ID)
         end
     end
     return unitsMap

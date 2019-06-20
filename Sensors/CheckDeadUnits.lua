@@ -11,7 +11,7 @@ return function(unitsMap)
     for unitType, units in pairs(unitsMap) do
         local un = {}
         for i=1,#units do
-            if Spring.GetUnitIsDead(units[i]["id"]) == false then
+            if Spring.ValidUnitID(units[i].id) then
                 un[#un + 1] = units[i]
             end
         end

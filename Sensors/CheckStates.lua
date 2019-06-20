@@ -7,8 +7,8 @@ local sensorInfo = {
 local EVAL_PERIOD_DEFAULT = -1
 
 return function(units, state)
-    for id, unit in pairs(units) do
-        if unit["state"] ~= state then
+    for i=1, #units do
+        if units[i]["state"] ~= state then
             return false
         end
     end

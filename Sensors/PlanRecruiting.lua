@@ -25,25 +25,34 @@ function safeBuy(list, what, metal, prices)
 	end
 end
 
-function checkUnit(list, units, amount, unit, metal, prices)
-	local total = #units
+function checkUnit(list, uns, amount, unit, metal, prices)
+	local total = #uns
 	while total < amount do
 		safeBuy(list, unit, metal, prices)
 		total = total + 1
 	end
 end
 
-return function(unitsMap, prices)
+return function(unitsMap, squad, farks, prices)
 	local list = {}
 	local metalMap = {}
 	metalMap["metal"] = Sensors.Skynet.GetTeamMetal()
 	local radars = unitsMap["radars"]
 	local lugers = unitsMap["lugers"]
 	local atlases = unitsMap["atlases"]
+	local farks = unitsMap["farks"]
 
-	checkUnit(list, radars, 1, "armseer", metalMap, prices)
-	checkUnit(list, lugers, 16, "armmart", metalMap, prices)
-	checkUnit(list, atlases, 5, "armatlas", metalMap, prices)
+	if not squad.ready then
+		checkUnit(list, lugers, 12, "armmart", metalMap, prices)
+		checkUnit(list, atlases, 13, "armatlas", metalMap, prices)
+		checkUnit(list, radars, 1, "armseer", metalMap, prices)
+	end
+	if not farks.ready and #unitsMap.farks < 2 then
+		safeBuy(list, "armfark", metalMap, prices)
+		if #unitsMap.farks == 0 then
+			safeBuy(list, "armfark", metalMap, prices)
+		end
+	end
 
 	return list
 end

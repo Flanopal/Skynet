@@ -29,22 +29,19 @@ return function()
     local lugers = {}
     local radars = {}
     local peepers = {}
-    local units = Spring.GetTeamUnits(Spring.GetMyTeamID())
-    for i=1, #units do
-        if (IsUnitOfType(units[i], "armseer")) then
-            AppendNewUnit(radars, units[i])
-        elseif (IsUnitOfType(units[i], "armatlas")) then
-            AppendNewUnit(atlases, units[i])
-        elseif (IsUnitOfType(units[i], "armmart")) then
-            AppendNewUnit(lugers, units[i])
-        elseif (IsUnitOfType(units[i], "armpeep")) then
-            AppendNewUnit(peepers, units[i])
-            peepers[#peepers]["state"] = 1
+    local unitz = Spring.GetTeamUnits(Spring.GetMyTeamID())
+    for i=1, #unitz do
+        if (IsUnitOfType(unitz[i], "armseer")) then
+            AppendNewUnit(radars, unitz[i])
+        elseif (IsUnitOfType(unitz[i], "armatlas")) then
+            AppendNewUnit(atlases, unitz[i])
+        elseif (IsUnitOfType(unitz[i], "armmart")) then
+            AppendNewUnit(lugers, unitz[i])
         end
     end
     unitsMap["atlases"] = atlases
     unitsMap["lugers"] = lugers
     unitsMap["radars"] = radars
-    unitsMap["peepers"] = peepers
+    unitsMap["farks"] = {}
     return unitsMap
 end

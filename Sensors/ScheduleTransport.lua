@@ -14,22 +14,15 @@ function tableLength(table)
     return count
 end
 
-return function(unitz, atlases, positions)
-    local unitsForOneAtlas = #unitz / #atlases 
-    local atlasIndex = 1
-    local currentAtlasLoaded = 0
+return function(unitz, atlases, num, position) 
+    local positionsIndex = 1
     local schedule = {}
-    for i=1, #unitz do
+    for i=1,num do
         local transport = {}
         transport["unit"] = unitz[i]["id"]
-        transport["atlas"] = atlases[atlasIndex]["id"]
-        transport["toPos"] = positions[i]
+        transport["atlas"] = atlases[i]["id"]
+        transport["toPos"] = position
         schedule[#schedule + 1] = transport
-        currentAtlasLoaded = currentAtlasLoaded + 1
-        if currentAtlasLoaded == unitsForOneAtlas then
-            atlasIndex = atlasIndex + 1
-            currentAtlasLoaded = 0
-        end
     end
     return schedule
 end
