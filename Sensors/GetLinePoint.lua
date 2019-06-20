@@ -5,16 +5,26 @@ local sensorInfo = {
 	date = "2019-05-09"
 }
 
-return function(line, enemyTeamID, radius)
+local EVAL_PERIOD_DEFAULT = -1
+
+return function(line, radius)
 	local points = line["points"]
+	local enemyTeamIDs = Sensors.core.EnemyTeamIDs()
 	local max = 0
 	local linePoint = nil
 	for i=1, #points do
-		enemies = Spring.GetUnitsInCylinder(points[i].x, points[i].z, radius, enemyTeamID)
-		if #enemies > max then
-			max = #enemies
+		local curEnemies = 0
+		for j=1, #enemyTeamIDs do
+			enemies = Spring.GetUnitsInCylinder(points[i].position.x, points[i].position.z, radius, enemyTeamIDs[j])
+			curEnemies = curEnemies + #enemies
+		end
+		if curEnemies > max then
+			max = curEnemies
 			linePoint = points[i]
 		end
+	end
+	if (linePoint == nil) then
+		linePoint = points[#points - 1]
 	end
 	return linePoint
 end

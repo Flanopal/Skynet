@@ -18,10 +18,10 @@ function getInfo()
 	}
 end
 
-return function(table,key)
-	for i=1,#table do
-		if Spring.GetUnitIsDead(table[i][key]) ~= false then
-			table[i][key] = nil
+return function(table)
+	for ID, _ in pairs(table) do
+		if Spring.GetUnitIsDead(ID) ~= false then
+			table[ID] = nil
 		end
 	end
 end

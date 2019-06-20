@@ -5,6 +5,10 @@ local sensorInfo = {
 	date = "2019-05-09"
 }
 
-return function(points)
+local EVAL_PERIOD_DEFAULT = -1
 
+return function(points)
+	local lineInfo = {}
+	lineInfo["points"] = points
+	return points
 end
