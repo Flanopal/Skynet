@@ -36,7 +36,7 @@ function Run(self, units, parameter)
 	local unit = parameter.unit
 
 	if not self.commandGiven then
-		Spring.GiveOrderToUnit(transporter,CMD.UNLOAD_UNITS,{position.x, position.y, position.z, 300},{})
+		Spring.GiveOrderToUnit(transporter,CMD.UNLOAD_UNITS,{position.x, position.y, position.z, 150},{})
 		self.commandGiven = true
 	end
 

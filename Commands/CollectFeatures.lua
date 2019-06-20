@@ -29,6 +29,7 @@ end
 local Order = Spring.GiveOrderToUnit
 
 local function ClearState(self)
+	self.orderGiven = false
 end
 
 -- @load unit
@@ -37,13 +38,15 @@ function Run(self, units, parameter)
 	local position = parameter.position
 	local radius = parameter.radius
 
-	Order(collector, CMD.RECLAIM,{position.x, position.y, position.z, radius},{})
-
-	-- jak poznat success? zavolat znovu
-	--if Sensors.Skynet.GetTrashAtLinePoint(position, radius) == nil then
-	--	return SUCCESS
-	--end
-	return SUCCESS
+	local cmdQLen = Spring.GetCommandQueue(collector, 0)
+	if not self.orderGiven then
+		Order(collector, CMD.RECLAIM,{position.x, position.y, position.z, radius},{})
+		self.orderGiven = true
+	end
+	if cmdQLen == 0 then
+		return SUCCESS
+	end
+	return RUNNING
 end
 
 function Reset(self)
