@@ -207,7 +207,7 @@
 								"value": "schedule"
 							}, {
 								"name": "value",
-								"value": "Skynet.ScheduleTransport(lugers, atlases, 13, lineInfo[\"lastStrongpoint\"])"
+								"value": "Skynet.ScheduleTransport(lugers, atlases, 12, lineInfo[\"lastStrongpoint\"])"
 							}, {
 								"name": "scriptName",
 								"value": "store"

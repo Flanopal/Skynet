@@ -19,8 +19,8 @@
 			"height": 112,
 			"title": "Skynet.CollectFeatures",
 			"width": 230,
-			"x": 1057,
-			"y": 57
+			"x": 1123,
+			"y": 35
 		},
 		"FOWNWrsjd4wnYNx94SWgkMzC55W0NlLi": {
 			"height": 70,
@@ -40,22 +40,29 @@
 			"height": 112,
 			"title": "Skynet.MoveTo",
 			"width": 230,
-			"x": 1054,
-			"y": -52
+			"x": 1110,
+			"y": -89
 		},
 		"Sy7wXsSntwpOoJKb88k6sUKSzFXARNw0": {
 			"height": 112,
 			"title": "Skynet.MoveTo",
 			"width": 230,
-			"x": 1064,
-			"y": 165
+			"x": 1175,
+			"y": 150
+		},
+		"UtSfhpXosChNwDLH8EmY35GPUnyNIuIg": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 792,
+			"y": 224
 		},
 		"ZYEZFXs957q1UW2EZqhXuREOlkmtoLZS": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 827,
-			"y": 30
+			"x": 937,
+			"y": -3
 		},
 		"eNWAcWXO7iTKvMfSJPKlRK3RZkwMsL2w": {
 			"height": 90,
@@ -68,15 +75,22 @@
 			"height": 112,
 			"title": "Skynet.CollectFeatures",
 			"width": 230,
-			"x": 1068,
-			"y": 276
+			"x": 1179,
+			"y": 261
+		},
+		"mOpIXPOvGnjAjHYfl43xnIhOnjH71K88": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 778,
+			"y": 3
 		},
 		"n0xgD2Gu6E5uKdoygvzJjjW7XavAlB2b": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 840,
-			"y": 243
+			"x": 951,
+			"y": 228
 		}
 	},
 	"roles": [ {
@@ -87,85 +101,95 @@
 		"children": [ {
 			"children": [ {
 				"children": [ {
-					"children": [],
-					"id": "OvXbFetxQxNTYa4W5kryg8Ik77YslPZZ",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "unit",
-						"value": "farks[1]"
+					"children": [ {
+						"children": [],
+						"id": "OvXbFetxQxNTYa4W5kryg8Ik77YslPZZ",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unit",
+							"value": "farks[1]"
+						}, {
+							"name": "position",
+							"value": "lineInfo.reclaimPoint"
+						}, {
+							"name": "tolerance",
+							"value": "150"
+						}, {
+							"name": "scriptName",
+							"value": "Skynet.MoveTo"
+						} ],
+						"scriptName": "Skynet.MoveTo"
 					}, {
-						"name": "position",
-						"value": "lineInfo.reclaimPoint"
-					}, {
-						"name": "tolerance",
-						"value": "150"
-					}, {
-						"name": "scriptName",
-						"value": "Skynet.MoveTo"
+						"children": [],
+						"id": "7gseCJ2dQxbegH4w71coLbPT9rkMFf82",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "collector",
+							"value": "farks[1]"
+						}, {
+							"name": "position",
+							"value": "lineInfo.reclaimPoint"
+						}, {
+							"name": "radius",
+							"value": "400"
+						}, {
+							"name": "scriptName",
+							"value": "Skynet.CollectFeatures"
+						} ],
+						"scriptName": "Skynet.CollectFeatures"
 					} ],
-					"scriptName": "Skynet.MoveTo"
-				}, {
-					"children": [],
-					"id": "7gseCJ2dQxbegH4w71coLbPT9rkMFf82",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "collector",
-						"value": "farks[1]"
-					}, {
-						"name": "position",
-						"value": "lineInfo.reclaimPoint"
-					}, {
-						"name": "radius",
-						"value": "750"
-					}, {
-						"name": "scriptName",
-						"value": "Skynet.CollectFeatures"
-					} ],
-					"scriptName": "Skynet.CollectFeatures"
+					"id": "ZYEZFXs957q1UW2EZqhXuREOlkmtoLZS",
+					"nodeType": "sequence",
+					"parameters": []
 				} ],
-				"id": "ZYEZFXs957q1UW2EZqhXuREOlkmtoLZS",
-				"nodeType": "sequence",
+				"id": "mOpIXPOvGnjAjHYfl43xnIhOnjH71K88",
+				"nodeType": "repeat",
 				"parameters": []
 			}, {
 				"children": [ {
-					"children": [],
-					"id": "Sy7wXsSntwpOoJKb88k6sUKSzFXARNw0",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "unit",
-						"value": "farks[2]"
+					"children": [ {
+						"children": [],
+						"id": "Sy7wXsSntwpOoJKb88k6sUKSzFXARNw0",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unit",
+							"value": "farks[2]"
+						}, {
+							"name": "position",
+							"value": "lineInfo.reclaimPoint"
+						}, {
+							"name": "tolerance",
+							"value": "150"
+						}, {
+							"name": "scriptName",
+							"value": "Skynet.MoveTo"
+						} ],
+						"scriptName": "Skynet.MoveTo"
 					}, {
-						"name": "position",
-						"value": "lineInfo.reclaimPoint"
-					}, {
-						"name": "tolerance",
-						"value": "150"
-					}, {
-						"name": "scriptName",
-						"value": "Skynet.MoveTo"
+						"children": [],
+						"id": "kZ1SOSnwlTioDkdvMJjqFxPAMX9R5odV",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "collector",
+							"value": "farks[2]"
+						}, {
+							"name": "position",
+							"value": "lineInfo.reclaimPoint"
+						}, {
+							"name": "radius",
+							"value": "600"
+						}, {
+							"name": "scriptName",
+							"value": "Skynet.CollectFeatures"
+						} ],
+						"scriptName": "Skynet.CollectFeatures"
 					} ],
-					"scriptName": "Skynet.MoveTo"
-				}, {
-					"children": [],
-					"id": "kZ1SOSnwlTioDkdvMJjqFxPAMX9R5odV",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "collector",
-						"value": "farks[2]"
-					}, {
-						"name": "position",
-						"value": "lineInfo.reclaimPoint"
-					}, {
-						"name": "radius",
-						"value": "750"
-					}, {
-						"name": "scriptName",
-						"value": "Skynet.CollectFeatures"
-					} ],
-					"scriptName": "Skynet.CollectFeatures"
+					"id": "n0xgD2Gu6E5uKdoygvzJjjW7XavAlB2b",
+					"nodeType": "sequence",
+					"parameters": []
 				} ],
-				"id": "n0xgD2Gu6E5uKdoygvzJjjW7XavAlB2b",
-				"nodeType": "sequence",
+				"id": "UtSfhpXosChNwDLH8EmY35GPUnyNIuIg",
+				"nodeType": "repeat",
 				"parameters": []
 			} ],
 			"id": "FOWNWrsjd4wnYNx94SWgkMzC55W0NlLi",

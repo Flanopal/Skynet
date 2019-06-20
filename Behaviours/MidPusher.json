@@ -27,15 +27,15 @@
 			"height": 94,
 			"title": "store",
 			"width": 320,
-			"x": 1259,
-			"y": 304
+			"x": 1400,
+			"y": 291
 		},
 		"C9M8M40P6KKak4mYgveJJhngdqsGIAag": {
 			"height": 94,
 			"title": "store",
 			"width": 333,
-			"x": 1413,
-			"y": 259
+			"x": 1767,
+			"y": 244
 		},
 		"Cs8RCdpAavAp8Q8r5tRZCycy3XiZHSPX": {
 			"height": 94,
@@ -83,8 +83,8 @@
 			"height": 151,
 			"title": "reference",
 			"width": 189,
-			"x": 671,
-			"y": 184
+			"x": 679,
+			"y": 180
 		},
 		"VuasStHLfBdyUyyaFON5yJsXxFManlaz": {
 			"height": 88,
@@ -113,6 +113,13 @@
 			"width": 131,
 			"x": 489,
 			"y": 70
+		},
+		"ekjgjg2Dfjd7GyuJ822lveA7JCs5cQt0": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 482,
+			"y": 318
 		},
 		"fFZjTAJEYSMWvb446gy3R2KemiV5XbEw": {
 			"height": 60,
@@ -148,6 +155,13 @@
 			"width": 181,
 			"x": 690,
 			"y": 21
+		},
+		"os6uiGycdzV6K0SZ03NxSweGlMyiiWBN": {
+			"height": 151,
+			"title": "reference",
+			"width": 233,
+			"x": 667,
+			"y": 327
 		},
 		"r7DBjqNBsis1CeGmiPRgJsZeCWvArYjc": {
 			"height": 60,
@@ -188,7 +202,7 @@
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 514,
+			"x": 488,
 			"y": 200
 		},
 		"zaG4Z1I98opgFQIRFAdgnkZ8Y4VrGT15": {
@@ -504,6 +518,27 @@
 				"referenceOutputs": []
 			} ],
 			"id": "yYg8qNK3XhXg6tQg9unzosRN27claSTY",
+			"nodeType": "repeat",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "os6uiGycdzV6K0SZ03NxSweGlMyiiWBN",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Radar"
+				} ],
+				"referenceInputs": [ {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				}, {
+					"name": "radar",
+					"value": "unitsMap.radars[1]"
+				} ],
+				"referenceOutputs": []
+			} ],
+			"id": "ekjgjg2Dfjd7GyuJ822lveA7JCs5cQt0",
 			"nodeType": "repeat",
 			"parameters": []
 		} ],

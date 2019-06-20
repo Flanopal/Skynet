@@ -12,13 +12,6 @@
 	} ],
 	"outputs": [],
 	"properties": {
-		"8htsb9Kl7ia9oGx2pWU85MiSAZXT6cVM": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 1118,
-			"y": 110
-		},
 		"DwVtse3Bg6r9kZCBElMdhTjG042wYaz4": {
 			"height": 130,
 			"title": "reference",
@@ -231,19 +224,6 @@
 			"referenceInputs": [ {
 				"name": "transport",
 				"value": "schedule[11]"
-			} ],
-			"referenceOutputs": []
-		}, {
-			"children": [],
-			"id": "8htsb9Kl7ia9oGx2pWU85MiSAZXT6cVM",
-			"nodeType": "reference",
-			"parameters": [ {
-				"name": "behaviourName",
-				"value": "Skynet.Atlas-transport"
-			} ],
-			"referenceInputs": [ {
-				"name": "transport",
-				"value": "schedule[13]"
 			} ],
 			"referenceOutputs": []
 		}, {
