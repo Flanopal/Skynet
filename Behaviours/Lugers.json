@@ -2,8 +2,8 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 148,
-			"width": 216
+			"height": 168,
+			"width": 224
 		}
 	},
 	"inputs": [ {
@@ -11,250 +11,121 @@
 		"name": "lineInfo"
 	}, {
 		"command": "Variable",
-		"name": "lugers"
-	}, {
-		"command": "Variable",
-		"name": "atlases"
+		"name": "squad"
 	} ],
 	"outputs": [],
 	"properties": {
-		"0eJLvNCQmYSM9FgpyDE6ZBk0q4fwtXBs": {
-			"height": 92,
-			"title": "store",
-			"width": 197,
-			"x": 1779,
-			"y": -15
-		},
-		"0z5DOYyIRTX1xEfl0WyqcHZwZ7nvmRdW": {
-			"height": 70,
-			"title": "parallel",
-			"width": 202,
-			"x": 1987,
-			"y": 214
-		},
-		"2MYOm90uaCINVkw59C48XcEnDYPFu3Di": {
-			"height": 130,
-			"title": "reference",
-			"width": 223,
-			"x": 2870,
-			"y": -54
-		},
-		"5Rz5QymWaZvfQMHTIvwvhN3CZONhRsNp": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2253,
-			"y": -55
+		"1utqoEKjhgDgl9ozVZCmxh4CGAyqriha": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 688,
+			"y": 28
 		},
 		"750r6Q3TbAWojUhLFNB1F50JG4IjzdGs": {
-			"height": 90,
+			"height": 88,
 			"title": "luaCondition",
-			"width": 194,
-			"x": 235,
-			"y": 19
+			"width": 204,
+			"x": 520,
+			"y": -79
 		},
 		"CPuSf2hw01Izbwh5vTJS6XI9mQof4iC0": {
 			"height": 94,
 			"title": "store",
-			"width": 445,
-			"x": 1483,
-			"y": 164
-		},
-		"EfeYjdfLxiQktPaWqsY5v0PkKGMQMCST": {
-			"height": 90,
-			"title": "luaCondition",
-			"width": 296,
-			"x": 434,
-			"y": 20
-		},
-		"GII8dzkwjTmr6SuRlIFCUp3nWirPCVMR": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 1778,
-			"y": 260
-		},
-		"GTdScbhjqvnON9k7SoLDhv31SFMHAiTR": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2872,
-			"y": 199
-		},
-		"HcLdUVfA2Jzv0djQ5oltzjnt5EYzJ8Kg": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2445,
-			"y": 326
+			"width": 545,
+			"x": 1689,
+			"y": 77
 		},
 		"J5B18nbVBcPfYKfx6vytsPpX565EYO11": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 308,
-			"x": 1186,
-			"y": -31
-		},
-		"L9kAnPP1Tb9tWJXovPIQCwd4TiVNzJnT": {
-			"height": 70,
-			"title": "parallel",
-			"width": 202,
-			"x": 1989,
-			"y": 144
-		},
-		"MQ6fxz2WTGRIFN6s43u7Cxky3HYaZisg": {
-			"height": 54,
-			"title": "shooting.. check strongpoint?",
-			"width": 267,
-			"x": 778,
-			"y": -15
+			"x": 1399,
+			"y": -47
 		},
 		"NX0ky9b7ibEfULBvdav5sSRlu8ZCSLgz": {
 			"height": 54,
 			"title": "squad is not ready",
 			"width": 198,
-			"x": 448,
-			"y": 117
+			"x": 670,
+			"y": 120
 		},
-		"PVjdFcpss4uBqdjuhfWKgFZDHq4jvmG0": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2239,
-			"y": 200
+		"P5abwlLqqrMOvZNhkh0bCCMh783X7Whr": {
+			"height": 92,
+			"title": "store",
+			"width": 166,
+			"x": 895,
+			"y": -130
 		},
-		"PvW0VZ9nDw8bKpjpKoxVom13kljnxBxI": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2664,
-			"y": 67
+		"PPyDKjvZKnZtXnJKkD6ozWx8YDrNkSJl": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 454,
+			"y": 45
 		},
 		"R8dclIjg4JQvg7DNF5eAiZObf4vTMjDy": {
 			"height": 92,
 			"title": "Skynet.AttackAtPosition",
 			"width": 328,
-			"x": 1541,
-			"y": -93
+			"x": 1761,
+			"y": -105
 		},
 		"Svsu4LzjJOcJEXFrBRVwK595tbphLklq": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 353,
-			"x": 775,
-			"y": 41
+			"x": 893,
+			"y": 46
 		},
-		"Zb9WOS0cViHSLF89IQwkEjk4Li8ZH8AZ": {
+		"V9Ji3XyImOoPjWaKQv4fXNHyd2f7WOMB": {
 			"height": 130,
 			"title": "reference",
-			"width": 217,
-			"x": 2451,
-			"y": 71
+			"width": 230,
+			"x": 2124,
+			"y": 185
 		},
-		"bdJ3LdKisnnI8yZYnYzII71yVnwxGKrZ": {
+		"cdiyqTHSjit8klied0BNb5YlfZit5NoQ": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 1993,
-			"y": 347
+			"x": 1691,
+			"y": 176
+		},
+		"czxHwX0bSVizg1RNLA4Qf9JKXqCSdCiA": {
+			"height": 92,
+			"title": "store",
+			"width": 172,
+			"x": 894,
+			"y": -44
 		},
 		"dXS9opRDFq5pY7iL8Zh3SnejgT7PKIru": {
 			"height": 94,
 			"title": "store",
 			"width": 374,
-			"x": 1488,
-			"y": 332
-		},
-		"fZgjO1W1y6VTS8Hq548vmlBmBjrhDHeL": {
-			"height": 70,
-			"title": "parallel",
-			"width": 202,
-			"x": 1989,
-			"y": 280
+			"x": 1690,
+			"y": 245
 		},
 		"flCNUd88uOXXJduE8x4J3jVw5NmeAmSg": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1193,
-			"y": 196
-		},
-		"hBWm8fxiR2atZlv3MgSm2YG71q780AJW": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2457,
-			"y": -56
-		},
-		"hLzq97hF0NNHIOAPvAGPdL7Y9f8iMQls": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2658,
-			"y": 200
-		},
-		"kFj46w3tBwSXsI88i6PRxkGgxqWjKpUk": {
-			"height": 132,
-			"title": "reference",
-			"width": 217,
-			"x": 2247,
-			"y": 67
-		},
-		"khytsXGxmPTU7BIqeXJ3voFrBfUWYdv8": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2442,
+			"x": 1415,
 			"y": 199
-		},
-		"lAbZvnnuwOMZnnSK1LyqJMg16keduDPl": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2875,
-			"y": 326
 		},
 		"lF59ivr2U18gqPYVkvLlKTCVUxBGBYhi": {
 			"height": 54,
 			"title": "wait for target..",
 			"width": 177,
-			"x": 1546,
-			"y": 12
+			"x": 1760,
+			"y": -19
 		},
-		"liDHKWDn5tqNK31NMlCU8gn9rBSG4Xc1": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2879,
-			"y": 67
-		},
-		"rbkBV5XKgYEgPfngIt3ylzffDBGBt8wl": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2231,
-			"y": 326
-		},
-		"wur9EEmfLg9lOWasVftyp9NbOJlEPR52": {
-			"height": 134,
-			"title": "reference",
-			"width": 220,
-			"x": 2656,
-			"y": 325
-		},
-		"xgfJwgvph4D57ZqJrwHhDiI35AIFy01j": {
-			"height": 130,
-			"title": "reference",
-			"width": 217,
-			"x": 2664,
-			"y": -55
-		},
-		"yD3uwMihZmOfH8XZi0SRCp7zlkRbFA67": {
-			"height": 94,
-			"title": "store",
-			"width": 507,
-			"x": 1483,
-			"y": 69
+		"vFYDo5XdddSCwadnQg1MUagudk4lmnaT": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 281,
+			"y": -78
 		}
 	},
 	"roles": [ {
@@ -264,383 +135,164 @@
 	"root": {
 		"children": [ {
 			"children": [ {
-				"children": [],
-				"id": "MQ6fxz2WTGRIFN6s43u7Cxky3HYaZisg",
-				"nodeType": "success",
-				"parameters": []
-			}, {
 				"children": [ {
-					"children": [ {
-						"children": [],
-						"id": "R8dclIjg4JQvg7DNF5eAiZObf4vTMjDy",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "units",
-							"value": "lugers"
-						}, {
-							"name": "position",
-							"value": "lineInfo[\"currentEnemyStrongpoint\"]"
-						}, {
-							"name": "scriptName",
-							"value": "Skynet.AttackAtPosition"
-						} ],
-						"scriptName": "Skynet.AttackAtPosition"
+					"children": [],
+					"id": "P5abwlLqqrMOvZNhkh0bCCMh783X7Whr",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "lugers"
 					}, {
-						"children": [],
-						"id": "lF59ivr2U18gqPYVkvLlKTCVUxBGBYhi",
-						"nodeType": "success",
+						"name": "value",
+						"value": "squad.lugers"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "czxHwX0bSVizg1RNLA4Qf9JKXqCSdCiA",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "atlases"
+					}, {
+						"name": "value",
+						"value": "squad.atlases"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "R8dclIjg4JQvg7DNF5eAiZObf4vTMjDy",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "units",
+								"value": "lugers"
+							}, {
+								"name": "position",
+								"value": "lineInfo[\"currentEnemyStrongpoint\"]"
+							}, {
+								"name": "scriptName",
+								"value": "Skynet.AttackAtPosition"
+							} ],
+							"scriptName": "Skynet.AttackAtPosition"
+						}, {
+							"children": [],
+							"id": "lF59ivr2U18gqPYVkvLlKTCVUxBGBYhi",
+							"nodeType": "success",
+							"parameters": []
+						} ],
+						"id": "J5B18nbVBcPfYKfx6vytsPpX565EYO11",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "lineInfo[\"currentEnemyStrongpoint\"] ~= nil"
+						}, {
+							"name": "repeat",
+							"value": "false"
+						} ]
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "CPuSf2hw01Izbwh5vTJS6XI9mQof4iC0",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "schedule"
+							}, {
+								"name": "value",
+								"value": "Skynet.ScheduleTransport(lugers, atlases, 13, lineInfo[\"lastStrongpoint\"])"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [ {
+								"children": [],
+								"id": "V9Ji3XyImOoPjWaKQv4fXNHyd2f7WOMB",
+								"nodeType": "reference",
+								"parameters": [ {
+									"name": "behaviourName",
+									"value": "Skynet.Lugers-transport"
+								} ],
+								"referenceInputs": [ {
+									"name": "schedule",
+									"value": "schedule"
+								} ],
+								"referenceOutputs": []
+							} ],
+							"id": "cdiyqTHSjit8klied0BNb5YlfZit5NoQ",
+							"nodeType": "parallel",
+							"parameters": [ {
+								"name": "mode",
+								"value": "all-success"
+							} ]
+						}, {
+							"children": [],
+							"id": "dXS9opRDFq5pY7iL8Zh3SnejgT7PKIru",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "lugers"
+							}, {
+								"name": "value",
+								"value": "Skynet.SetStates(lugers, \"waiting_for_target\")"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						} ],
+						"id": "flCNUd88uOXXJduE8x4J3jVw5NmeAmSg",
+						"nodeType": "sequence",
 						"parameters": []
 					} ],
-					"id": "J5B18nbVBcPfYKfx6vytsPpX565EYO11",
+					"id": "Svsu4LzjJOcJEXFrBRVwK595tbphLklq",
 					"nodeType": "luaCondition",
 					"parameters": [ {
 						"name": "expression",
-						"value": "lineInfo[\"currentEnemyStrongpoint\"] ~= nil"
+						"value": "Skynet.CheckStates(lugers, \"waiting_for_target\")"
 					}, {
 						"name": "repeat",
 						"value": "false"
 					} ]
-				}, {
-					"children": [ {
-						"children": [],
-						"id": "0eJLvNCQmYSM9FgpyDE6ZBk0q4fwtXBs",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "x"
-						}, {
-							"name": "value",
-							"value": "#lugers / #atlases"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					}, {
-						"children": [],
-						"id": "yD3uwMihZmOfH8XZi0SRCp7zlkRbFA67",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "positionsGrid"
-						}, {
-							"name": "value",
-							"value": "Skynet.GenerateTargetGrid(lineInfo[\"lastStrongpoint\"], lugers)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					}, {
-						"children": [],
-						"id": "CPuSf2hw01Izbwh5vTJS6XI9mQof4iC0",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "schedule"
-						}, {
-							"name": "value",
-							"value": "Skynet.ScheduleTransport(lugers, atlases, positionsGrid)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					}, {
-						"children": [ {
-							"children": [ {
-								"children": [],
-								"id": "hBWm8fxiR2atZlv3MgSm2YG71q780AJW",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[5]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "5Rz5QymWaZvfQMHTIvwvhN3CZONhRsNp",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[1]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "xgfJwgvph4D57ZqJrwHhDiI35AIFy01j",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[9]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "2MYOm90uaCINVkw59C48XcEnDYPFu3Di",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[13]"
-								} ],
-								"referenceOutputs": []
-							} ],
-							"id": "L9kAnPP1Tb9tWJXovPIQCwd4TiVNzJnT",
-							"nodeType": "parallel",
-							"parameters": [ {
-								"name": "mode",
-								"value": "all-success"
-							} ]
-						}, {
-							"children": [ {
-								"children": [],
-								"id": "kFj46w3tBwSXsI88i6PRxkGgxqWjKpUk",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[2]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "liDHKWDn5tqNK31NMlCU8gn9rBSG4Xc1",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[14]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "PvW0VZ9nDw8bKpjpKoxVom13kljnxBxI",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[10]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "Zb9WOS0cViHSLF89IQwkEjk4Li8ZH8AZ",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[6]"
-								} ],
-								"referenceOutputs": []
-							} ],
-							"id": "0z5DOYyIRTX1xEfl0WyqcHZwZ7nvmRdW",
-							"nodeType": "parallel",
-							"parameters": [ {
-								"name": "mode",
-								"value": "all-success"
-							} ]
-						}, {
-							"children": [ {
-								"children": [],
-								"id": "GTdScbhjqvnON9k7SoLDhv31SFMHAiTR",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[15]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "khytsXGxmPTU7BIqeXJ3voFrBfUWYdv8",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[7]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "hLzq97hF0NNHIOAPvAGPdL7Y9f8iMQls",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[11]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "PVjdFcpss4uBqdjuhfWKgFZDHq4jvmG0",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[3]"
-								} ],
-								"referenceOutputs": []
-							} ],
-							"id": "fZgjO1W1y6VTS8Hq548vmlBmBjrhDHeL",
-							"nodeType": "parallel",
-							"parameters": [ {
-								"name": "mode",
-								"value": "all-success"
-							} ]
-						}, {
-							"children": [ {
-								"children": [],
-								"id": "wur9EEmfLg9lOWasVftyp9NbOJlEPR52",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[12]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "HcLdUVfA2Jzv0djQ5oltzjnt5EYzJ8Kg",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[8]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "rbkBV5XKgYEgPfngIt3ylzffDBGBt8wl",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[4]"
-								} ],
-								"referenceOutputs": []
-							}, {
-								"children": [],
-								"id": "lAbZvnnuwOMZnnSK1LyqJMg16keduDPl",
-								"nodeType": "reference",
-								"parameters": [ {
-									"name": "behaviourName",
-									"value": "Skynet.Atlas-transport"
-								} ],
-								"referenceInputs": [ {
-									"name": "transport",
-									"value": "schedule[16]"
-								} ],
-								"referenceOutputs": []
-							} ],
-							"id": "bdJ3LdKisnnI8yZYnYzII71yVnwxGKrZ",
-							"nodeType": "parallel",
-							"parameters": [ {
-								"name": "mode",
-								"value": "all-success"
-							} ]
-						} ],
-						"id": "GII8dzkwjTmr6SuRlIFCUp3nWirPCVMR",
-						"nodeType": "sequence",
-						"parameters": []
-					}, {
-						"children": [],
-						"id": "dXS9opRDFq5pY7iL8Zh3SnejgT7PKIru",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "lugers"
-						}, {
-							"name": "value",
-							"value": "Skynet.SetStates(lugers, \"waiting_for_target\")"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					} ],
-					"id": "flCNUd88uOXXJduE8x4J3jVw5NmeAmSg",
-					"nodeType": "sequence",
-					"parameters": []
 				} ],
-				"id": "Svsu4LzjJOcJEXFrBRVwK595tbphLklq",
-				"nodeType": "luaCondition",
-				"parameters": [ {
-					"name": "expression",
-					"value": "Skynet.CheckStates(lugers, \"waiting_for_target\")"
-				}, {
-					"name": "repeat",
-					"value": "false"
-				} ]
+				"id": "1utqoEKjhgDgl9ozVZCmxh4CGAyqriha",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "NX0ky9b7ibEfULBvdav5sSRlu8ZCSLgz",
+				"nodeType": "success",
+				"parameters": []
 			} ],
-			"id": "EfeYjdfLxiQktPaWqsY5v0PkKGMQMCST",
+			"id": "750r6Q3TbAWojUhLFNB1F50JG4IjzdGs",
 			"nodeType": "luaCondition",
 			"parameters": [ {
 				"name": "expression",
-				"value": "Skynet.CheckStates(lugers, \"shooting\")"
+				"value": "squad.ready"
 			}, {
 				"name": "repeat",
 				"value": "false"
 			} ]
 		}, {
 			"children": [],
-			"id": "NX0ky9b7ibEfULBvdav5sSRlu8ZCSLgz",
+			"id": "PPyDKjvZKnZtXnJKkD6ozWx8YDrNkSJl",
 			"nodeType": "success",
 			"parameters": []
 		} ],
-		"id": "750r6Q3TbAWojUhLFNB1F50JG4IjzdGs",
+		"id": "vFYDo5XdddSCwadnQg1MUagudk4lmnaT",
 		"nodeType": "luaCondition",
 		"parameters": [ {
 			"name": "expression",
-			"value": "#lugers == 16"
+			"value": "squad ~= nil"
 		}, {
 			"name": "repeat",
 			"value": "false"

@@ -210,7 +210,7 @@
 							"value": "seenEnemy"
 						}, {
 							"name": "value",
-							"value": "Skynet.GetDangerInRadius(Spring.GetUnitPosition(FARC),500, teamID)"
+							"value": "Skynet.GetDangerInRadius(Spring.GetUnitPosition(FARC),500)"
 						}, {
 							"name": "scriptName",
 							"value": "store"
@@ -279,7 +279,7 @@
 										"nodeType": "luaCondition",
 										"parameters": [ {
 											"name": "expression",
-											"value": "currentLinePoint < lineInfo[\"front\"]"
+											"value": "currentLinePoint < lineInfo[\"linePoint\"]"
 										}, {
 											"name": "repeat",
 											"value": "false"

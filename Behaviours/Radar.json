@@ -25,13 +25,6 @@
 			"x": 842,
 			"y": 80
 		},
-		"Eod5dz1wG0RrNor2Mo2WtwBi4W5OpG20": {
-			"height": 94,
-			"title": "store",
-			"width": 509,
-			"x": 1049,
-			"y": -105
-		},
 		"ONe9aYMMLopm8Rj7jZBd7grNEfy7kGSe": {
 			"height": 54,
 			"title": "success",
@@ -43,8 +36,8 @@
 			"height": 94,
 			"title": "store",
 			"width": 599,
-			"x": 1059,
-			"y": -6
+			"x": 1063,
+			"y": -17
 		},
 		"TrEgNdUmQ5mNmz8v0WxIWp2jzo8YuzLr": {
 			"height": 54,
@@ -64,8 +57,8 @@
 			"height": 130,
 			"title": "reference",
 			"width": 217,
-			"x": 1059,
-			"y": 87
+			"x": 1067,
+			"y": 86
 		},
 		"zkjxMgSaplgNjfV4KY8Jq7rLbAwmVaCu": {
 			"height": 90,
@@ -101,21 +94,6 @@
 			}, {
 				"children": [ {
 					"children": [],
-					"id": "Eod5dz1wG0RrNor2Mo2WtwBi4W5OpG20",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "positions"
-					}, {
-						"name": "value",
-						"value": "Skynet.GenerateTargetGrid(lineInfo[\"lastStrongpoint\"], radars)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
-				}, {
-					"children": [],
 					"id": "RIWblz2T8EMFDebFgIQ0oyUajLdyJx2p",
 					"nodeType": "luaCommand",
 					"parameters": [ {
@@ -123,7 +101,7 @@
 						"value": "schedule"
 					}, {
 						"name": "value",
-						"value": "Skynet.ScheduleTransport(radars, atlases, positions)"
+						"value": "Skynet.ScheduleTransport(radars, atlases, lineInfo[\"lastStrongpoint\"])"
 					}, {
 						"name": "scriptName",
 						"value": "store"

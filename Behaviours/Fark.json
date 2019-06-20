@@ -1,0 +1,22 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "fark"
+	}, {
+		"command": "Variable",
+		"name": "lineInfo"
+	} ],
+	"outputs": [],
+	"properties": [],
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ]
+}
