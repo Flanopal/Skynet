@@ -12,13 +12,11 @@ return function(unitsMap, squad)
         return squad
     end
     local squad = {}
-    if #unitsMap.lugers > 11 and #unitsMap.atlases > 12 and #unitsMap.radars > 0 then
+    if #unitsMap.lugers > 11 and #unitsMap.atlases > 11 then
         squad.lugers = unitsMap.lugers
-        squad.lugers[#squad.lugers + 1] = unitsMap.radars[1]
         squad.atlases = unitsMap.atlases
         unitsMap.lugers = {}
         unitsMap.atlases = {}
-        unitsMap.radars = {}
         squad.ready = true
         return squad
     end

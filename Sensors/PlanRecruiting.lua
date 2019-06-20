@@ -42,10 +42,10 @@ return function(unitsMap, squad, farks, prices)
 	local atlases = unitsMap["atlases"]
 	local farks = unitsMap["farks"]
 
+	checkUnit(list, radars, 1, "armseer", metalMap, prices)
 	if not squad.ready then
 		checkUnit(list, lugers, 12, "armmart", metalMap, prices)
-		checkUnit(list, atlases, 13, "armatlas", metalMap, prices)
-		checkUnit(list, radars, 1, "armseer", metalMap, prices)
+		checkUnit(list, atlases, 12, "armatlas", metalMap, prices)
 	end
 	if not farks.ready and #unitsMap.farks < 2 then
 		safeBuy(list, "armfark", metalMap, prices)
