@@ -1,0 +1,138 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "Peewees"
+	}, {
+		"command": "Variable",
+		"name": "lineInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"QPa4OfytoutTzVAlIupV3xckBbFPU851": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 504,
+			"y": 20
+		},
+		"RUDGAWDRhq0GpEcCXazS2RXKuGcxHJhQ": {
+			"height": 151,
+			"title": "reference",
+			"width": 190,
+			"x": 838,
+			"y": -165
+		},
+		"TthCrFN4w7zBEI9sUrEK8Hg3KfjjN5XL": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 507,
+			"y": 103
+		},
+		"XCla31BrkGAAi0CT9q827qEDVaUiGdbV": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 250,
+			"y": 15
+		},
+		"ZCvVRCJdWWSgaNyHzVMCaUitQD8J9haa": {
+			"height": 151,
+			"title": "reference",
+			"width": 190,
+			"x": 1061,
+			"y": -58
+		},
+		"wHjOfQTbAWs8dGsiy0EavTX1uqhabyqJ": {
+			"height": 151,
+			"title": "reference",
+			"width": 190,
+			"x": 826,
+			"y": 14
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "RUDGAWDRhq0GpEcCXazS2RXKuGcxHJhQ",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Peewee"
+				} ],
+				"referenceInputs": [ {
+					"name": "Peewee",
+					"value": "Peewees[1]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "ZCvVRCJdWWSgaNyHzVMCaUitQD8J9haa",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Peewee"
+				} ],
+				"referenceInputs": [ {
+					"name": "Peewee",
+					"value": "Peewees[1]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "wHjOfQTbAWs8dGsiy0EavTX1uqhabyqJ",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Peewee"
+				} ],
+				"referenceInputs": [ {
+					"name": "Peewee",
+					"value": "Peewees[1]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			} ],
+			"id": "QPa4OfytoutTzVAlIupV3xckBbFPU851",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		}, {
+			"children": [],
+			"id": "TthCrFN4w7zBEI9sUrEK8Hg3KfjjN5XL",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "XCla31BrkGAAi0CT9q827qEDVaUiGdbV",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "Peewees ~= nil"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}

@@ -1,0 +1,187 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 246
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "transport"
+	} ],
+	"outputs": [],
+	"properties": {
+		"19hcLVR3ZK0pIwN2aACV9fJlov8LElVp": {
+			"height": 112,
+			"title": "Skynet.UnloadUnit",
+			"width": 249,
+			"x": 1136,
+			"y": 128
+		},
+		"1PN4p6sRKXGU1HXZ1uLbYwzrP6lPZMEo": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 588,
+			"y": 121
+		},
+		"3cj9pXU8TD5aAzCU6ZxXRZngQUf7ZSjD": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 940,
+			"y": 17
+		},
+		"ZRJEyi3nmYHnKgYPm1bMKefp5DlarnVY": {
+			"height": 92,
+			"title": "store",
+			"width": 200,
+			"x": 1135,
+			"y": 234
+		},
+		"blWj3MRXJjUpQZ5TspnyodTf0UjiQMje": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 284,
+			"y": 18
+		},
+		"emou1afLIo82ZiJugy1EUpt47ucMQWfN": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 216,
+			"x": 660,
+			"y": 33
+		},
+		"nAznb0qjtgmgqPdJ3p6121sNPaGM3hJG": {
+			"height": 92,
+			"title": "Skynet.LoadUnit",
+			"width": 225,
+			"x": 1137,
+			"y": -74
+		},
+		"wAqfbmBJCah5lQlQAtyeHwGNPELUZRic": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 941,
+			"y": 73
+		},
+		"yc8LUyncMLw8jf6HfuNby85uJ40HFbge": {
+			"height": 113,
+			"title": "Skynet.MoveTo",
+			"width": 390,
+			"x": 1137,
+			"y": 17
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "nAznb0qjtgmgqPdJ3p6121sNPaGM3hJG",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "transporter",
+						"value": "transport[\"atlas\"]"
+					}, {
+						"name": "unit",
+						"value": "transport[\"unit\"]"
+					}, {
+						"name": "scriptName",
+						"value": "Skynet.LoadUnit"
+					} ],
+					"scriptName": "Skynet.LoadUnit"
+				}, {
+					"children": [],
+					"id": "yc8LUyncMLw8jf6HfuNby85uJ40HFbge",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "transport[\"atlas\"]"
+					}, {
+						"name": "position",
+						"value": "transport[\"toPos\"] "
+					}, {
+						"name": "tolerance",
+						"value": "400"
+					}, {
+						"name": "scriptName",
+						"value": "Skynet.MoveTo"
+					} ],
+					"scriptName": "Skynet.MoveTo"
+				}, {
+					"children": [],
+					"id": "19hcLVR3ZK0pIwN2aACV9fJlov8LElVp",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "transporter",
+						"value": "transport[\"atlas\"]"
+					}, {
+						"name": "position",
+						"value": "transport[\"toPos\"]"
+					}, {
+						"name": "unit",
+						"value": "transport[\"unit\"]"
+					}, {
+						"name": "scriptName",
+						"value": "Skynet.UnloadUnit"
+					} ],
+					"scriptName": "Skynet.UnloadUnit"
+				}, {
+					"children": [],
+					"id": "ZRJEyi3nmYHnKgYPm1bMKefp5DlarnVY",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "transport[\"toPos\"]"
+					}, {
+						"name": "value",
+						"value": "nil"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				} ],
+				"id": "3cj9pXU8TD5aAzCU6ZxXRZngQUf7ZSjD",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "wAqfbmBJCah5lQlQAtyeHwGNPELUZRic",
+				"nodeType": "success",
+				"parameters": []
+			} ],
+			"id": "emou1afLIo82ZiJugy1EUpt47ucMQWfN",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "transport[\"toPos\"] ~= nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		}, {
+			"children": [],
+			"id": "1PN4p6sRKXGU1HXZ1uLbYwzrP6lPZMEo",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "blWj3MRXJjUpQZ5TspnyodTf0UjiQMje",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "transport[\"atlas\"] ~= nil"
+		}, {
+			"name": "repeat",
+			"value": "true"
+		} ]
+	}
+}

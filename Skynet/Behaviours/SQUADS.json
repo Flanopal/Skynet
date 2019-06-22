@@ -1,0 +1,100 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "squads"
+	}, {
+		"command": "Variable",
+		"name": "lineInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"Gjuw4WVwx9Ghs3rqrGQbPOKQAhYFAlFI": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 550,
+			"y": -130
+		},
+		"hv5Trqzrzb6mjI2JePHSbyXIkPQZlpAk": {
+			"height": 94,
+			"title": "store",
+			"width": 258,
+			"x": 960,
+			"y": -225
+		},
+		"p4hYt3e4JLnxy8jUATkzXzvBzitwiND4": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 967,
+			"y": -127
+		},
+		"rI1LRjhoB7jcqK9dyxmyQC2OZMlqzk4t": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 709,
+			"y": -136
+		},
+		"vxgxlqSkswK8hG9PEDKuGqLVTe8svrQ1": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 286,
+			"y": 21
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "hv5Trqzrzb6mjI2JePHSbyXIkPQZlpAk",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "checkAlive"
+					}, {
+						"name": "value",
+						"value": "CheckSquadsAlive(squads)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "p4hYt3e4JLnxy8jUATkzXzvBzitwiND4",
+					"nodeType": "wait",
+					"parameters": [ {
+						"name": "time",
+						"value": 5
+					} ]
+				} ],
+				"id": "rI1LRjhoB7jcqK9dyxmyQC2OZMlqzk4t",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "Gjuw4WVwx9Ghs3rqrGQbPOKQAhYFAlFI",
+			"nodeType": "repeat",
+			"parameters": []
+		} ],
+		"id": "vxgxlqSkswK8hG9PEDKuGqLVTe8svrQ1",
+		"nodeType": "parallel",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
+	}
+}

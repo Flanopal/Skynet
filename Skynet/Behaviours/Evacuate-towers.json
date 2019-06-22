@@ -1,0 +1,174 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 148,
+			"width": 218
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "towers"
+	}, {
+		"command": "Variable",
+		"name": "lineInfo"
+	}, {
+		"command": "Variable",
+		"name": "atlasTable"
+	} ],
+	"outputs": [],
+	"properties": {
+		"4icd2jYXqm37VT9fJxlEIyqBCH14rOnx": {
+			"height": 96,
+			"title": "store",
+			"width": 380,
+			"x": 445,
+			"y": -161
+		},
+		"8BB7CtE7mbkNNIjIVKdtPw7RFHdvC8pB": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 891,
+			"y": 7
+		},
+		"BJqjTCMGagobqSKSxXe1DWJfCeiY9JRR": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 726,
+			"y": 7
+		},
+		"F4qxn0sevnKQLGEKh78xqPB4zdQz5xtz": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 727,
+			"y": 63
+		},
+		"JhFpdb7ufv2owLXU1xQvOqZAcNg5kJXV": {
+			"height": 94,
+			"title": "store",
+			"width": 368,
+			"x": 1077,
+			"y": -62
+		},
+		"OgQdrfqOj4TSBDBMCKVM9JWUtYorKFk6": {
+			"height": 95,
+			"title": "store",
+			"width": 248,
+			"x": 443,
+			"y": -70
+		},
+		"S7qS9F3QHzRbyfHwxCQu9nnMHWpul6gV": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 252,
+			"y": 31
+		},
+		"UgVvpseSoVpinPccCouQNtvuQFQWqtXu": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1078,
+			"y": 28
+		},
+		"paU1T7YtswsPGtWCVTnhviY4e8u7krfD": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 240,
+			"x": 444,
+			"y": 20
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "4icd2jYXqm37VT9fJxlEIyqBCH14rOnx",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "units"
+			}, {
+				"name": "value",
+				"value": "Skynet.FillTowerFormation(units,lineInfo)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "OgQdrfqOj4TSBDBMCKVM9JWUtYorKFk6",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "evacuation"
+			}, {
+				"name": "value",
+				"value": "Skynet.CopyTable(units)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "JhFpdb7ufv2owLXU1xQvOqZAcNg5kJXV",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "lefts"
+						}, {
+							"name": "value",
+							"value": "Skynet.AssignAtlases(evacuation,atlasTable)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "UgVvpseSoVpinPccCouQNtvuQFQWqtXu",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 2
+						} ]
+					} ],
+					"id": "8BB7CtE7mbkNNIjIVKdtPw7RFHdvC8pB",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "BJqjTCMGagobqSKSxXe1DWJfCeiY9JRR",
+				"nodeType": "repeat",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "F4qxn0sevnKQLGEKh78xqPB4zdQz5xtz",
+				"nodeType": "success",
+				"parameters": []
+			} ],
+			"id": "paU1T7YtswsPGtWCVTnhviY4e8u7krfD",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "lefts ~= 0 and evacuation~=nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		} ],
+		"id": "S7qS9F3QHzRbyfHwxCQu9nnMHWpul6gV",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

@@ -1,0 +1,16 @@
+-- read a control
+https://springrts.com/wiki/Lua_SyncedCtrl
+https://springrts.com/wiki/Lua_SyncedRead
+
+-- (unused) read a control
+https://springrts.com/wiki/Lua_UnsyncedCtrl
+https://springrts.com/wiki/Lua_UnsyncedRead
+
+-- commandy
+https://springrts.com/wiki/Lua_CMDs
+
+-- main nota API page
+https://bitbucket.org/notagame/nota/wiki/Home
+
+-- swampdota
+https://docs.google.com/document/d/1qRdOnBNklCMnp5V1RxN_i6wK0j0PLxSoJ_-oZyNpbsE/edit

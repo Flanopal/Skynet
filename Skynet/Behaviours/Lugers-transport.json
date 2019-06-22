@@ -1,0 +1,276 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "schedule"
+	} ],
+	"outputs": [],
+	"properties": {
+		"DwVtse3Bg6r9kZCBElMdhTjG042wYaz4": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 908,
+			"y": -10
+		},
+		"FOLprqFEmgVU7lnDWTCVDO3gJMAUky2x": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 701,
+			"y": -139
+		},
+		"HDCFW4B8VAreIfuqLwsVNLieFARlwPwJ": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 488,
+			"y": -274
+		},
+		"HHOXme2EpQaxbY8CdXypSgMqCVWOOdNa": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 705,
+			"y": -273
+		},
+		"NyaaPyvfKSMaskE4pwLc9twkHGBBGwcN": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 695,
+			"y": 116
+		},
+		"SBYjZss04ft6UiwDwQwcFygFgislKuxz": {
+			"height": 134,
+			"title": "reference",
+			"width": 220,
+			"x": 906,
+			"y": 115
+		},
+		"UMUqgKwF2fRckR9fAn8EwASgQ2MwSjFP": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 252,
+			"y": 15
+		},
+		"YeRPFl1tjCwUih8WtCUnWRYG84ygd37X": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 692,
+			"y": -11
+		},
+		"jB2LdfJYfFk29HVoWMczRmJr3VIYefKm": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 917,
+			"y": -272
+		},
+		"oASIE8lwzmQwadCUSaXoSTleUfxZqVUt": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 481,
+			"y": 116
+		},
+		"otOAF4HnRLQho6u6rVtPioG85ZF0Osoe": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 480,
+			"y": -14
+		},
+		"tebhQ3IZuwSzwlVskSwPoXXX6pe0NagJ": {
+			"height": 132,
+			"title": "reference",
+			"width": 217,
+			"x": 485,
+			"y": -137
+		},
+		"yv6b9JOQ7jWaph4yXmgRC2hLQS9jO6ix": {
+			"height": 130,
+			"title": "reference",
+			"width": 217,
+			"x": 914,
+			"y": -143
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "HDCFW4B8VAreIfuqLwsVNLieFARlwPwJ",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[1]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "HHOXme2EpQaxbY8CdXypSgMqCVWOOdNa",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[9]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "jB2LdfJYfFk29HVoWMczRmJr3VIYefKm",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[5]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "yv6b9JOQ7jWaph4yXmgRC2hLQS9jO6ix",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[10]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "FOLprqFEmgVU7lnDWTCVDO3gJMAUky2x",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[6]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "tebhQ3IZuwSzwlVskSwPoXXX6pe0NagJ",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[2]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "otOAF4HnRLQho6u6rVtPioG85ZF0Osoe",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[3]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "YeRPFl1tjCwUih8WtCUnWRYG84ygd37X",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[7]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "DwVtse3Bg6r9kZCBElMdhTjG042wYaz4",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[11]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "SBYjZss04ft6UiwDwQwcFygFgislKuxz",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[12]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "oASIE8lwzmQwadCUSaXoSTleUfxZqVUt",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[4]"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "NyaaPyvfKSMaskE4pwLc9twkHGBBGwcN",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "Skynet.Atlas-transport"
+			} ],
+			"referenceInputs": [ {
+				"name": "transport",
+				"value": "schedule[8]"
+			} ],
+			"referenceOutputs": []
+		} ],
+		"id": "UMUqgKwF2fRckR9fAn8EwASgQ2MwSjFP",
+		"nodeType": "parallel",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
+	}
+}

@@ -1,0 +1,414 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 168,
+			"width": 224
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "lineInfo"
+	}, {
+		"command": "Variable",
+		"name": "lugers"
+	} ],
+	"outputs": [],
+	"properties": {
+		"0vsYJAcJRty0AKVX5COJeZFlLTTsjLMT": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1030,
+			"y": 414
+		},
+		"4tdYLz0u3W505bT1MSzSZfZJE0AradtO": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1063,
+			"y": -45
+		},
+		"DpGNMVoh8lY2AyFWXcImkOsXo5fZWhFH": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1872,
+			"y": 412
+		},
+		"Id1vjHMGFBE5deklx5UPVuJm91xHmjJX": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 577,
+			"y": 41
+		},
+		"K7YyFmOywUETQ2GrdU7f3XUP1nI8WMU4": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1873,
+			"y": 115
+		},
+		"NVr3uO6GmW6i9vlxb7JUYyfXMXsxW8IL": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 227,
+			"x": 290,
+			"y": 27
+		},
+		"XfCujRE9JS8TEVVmDdjxJ0Ge9luNfxWH": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1057,
+			"y": 107
+		},
+		"YKhUq0g3GTe2ET0kifCQzwBRdlbXAVqg": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1463,
+			"y": 265
+		},
+		"aF5L9JvJyNOptFP5wvnG4pmXem2tvFSo": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1467,
+			"y": -33
+		},
+		"cFO2KJkFubNV4oT5phUzQYTiRNVxCvnE": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1465,
+			"y": -184
+		},
+		"j1Tzqlb32EAziyEEAkHrsVJLuJoLFrxN": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1887,
+			"y": -180
+		},
+		"saIbtKjypnr8vpk5kfGJ9Xla8h3OSv2X": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1884,
+			"y": -34
+		},
+		"vEgweGYEXeEKBrYjH2PvvwPZ8rJAsjB0": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1444,
+			"y": 420
+		},
+		"vT3PlTFDHqB6Ef7CWJHkVdNXsjqo4AW1": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 516,
+			"y": 162
+		},
+		"wMoSFkstiEw9N1XERqfujvoxLv7Hqg4h": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1070,
+			"y": -195
+		},
+		"wxQdOvF7mW9Ha32gdpcN9UZJYgRtv0o1": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1049,
+			"y": 259
+		},
+		"zsbp92kmUvWFZkpmSxpu7oghtepMH1NU": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1874,
+			"y": 264
+		},
+		"zt07NWZGIYCqhYrVxTIC5Asd7j2vUJte": {
+			"height": 151,
+			"title": "reference",
+			"width": 210,
+			"x": 1465,
+			"y": 109
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "wMoSFkstiEw9N1XERqfujvoxLv7Hqg4h",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[1]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "cFO2KJkFubNV4oT5phUzQYTiRNVxCvnE",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[2]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "j1Tzqlb32EAziyEEAkHrsVJLuJoLFrxN",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[3]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "4tdYLz0u3W505bT1MSzSZfZJE0AradtO",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[4]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "saIbtKjypnr8vpk5kfGJ9Xla8h3OSv2X",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[6]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "aF5L9JvJyNOptFP5wvnG4pmXem2tvFSo",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[5]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "XfCujRE9JS8TEVVmDdjxJ0Ge9luNfxWH",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[7]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "zt07NWZGIYCqhYrVxTIC5Asd7j2vUJte",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[8]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "K7YyFmOywUETQ2GrdU7f3XUP1nI8WMU4",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[9]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "wxQdOvF7mW9Ha32gdpcN9UZJYgRtv0o1",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[10]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "zsbp92kmUvWFZkpmSxpu7oghtepMH1NU",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[12]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "YKhUq0g3GTe2ET0kifCQzwBRdlbXAVqg",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[11]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "DpGNMVoh8lY2AyFWXcImkOsXo5fZWhFH",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[15]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "0vsYJAcJRty0AKVX5COJeZFlLTTsjLMT",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[13]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "vEgweGYEXeEKBrYjH2PvvwPZ8rJAsjB0",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "Skynet.Luger-pusher"
+				} ],
+				"referenceInputs": [ {
+					"name": "luger",
+					"value": "lugers[14]"
+				}, {
+					"name": "lineInfo",
+					"value": "lineInfo"
+				} ],
+				"referenceOutputs": []
+			} ],
+			"id": "Id1vjHMGFBE5deklx5UPVuJm91xHmjJX",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		}, {
+			"children": [],
+			"id": "vT3PlTFDHqB6Ef7CWJHkVdNXsjqo4AW1",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "NVr3uO6GmW6i9vlxb7JUYyfXMXsxW8IL",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "lineInfo.lastStrongpoint ~= nil"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}

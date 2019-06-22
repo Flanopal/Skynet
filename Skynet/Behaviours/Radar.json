@@ -1,0 +1,109 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "lineInfo"
+	}, {
+		"command": "Variable",
+		"name": "radar"
+	} ],
+	"outputs": [],
+	"properties": {
+		"GyANVs580vxGEDk9OnUsjMccSPoPyJje": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 434,
+			"x": 612,
+			"y": -12
+		},
+		"HOda0ARspPzfeIdB1CLtJ2yfu7Q88g8r": {
+			"height": 112,
+			"title": "Skynet.MoveTo",
+			"width": 247,
+			"x": 1106,
+			"y": 46
+		},
+		"LvytkKoWSGJv1GrjN2XtRUDNQ7GxP50p": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 331,
+			"x": 250,
+			"y": 10
+		},
+		"TVmlYoTIV2xEs8HPPJAaUNEwc6oAilSf": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 658,
+			"y": 89
+		},
+		"gbj4p44DbqHosWCc9dS8KZMQTPRSm9Zd": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1117,
+			"y": -35
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "gbj4p44DbqHosWCc9dS8KZMQTPRSm9Zd",
+				"nodeType": "success",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "HOda0ARspPzfeIdB1CLtJ2yfu7Q88g8r",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unit",
+					"value": "radar"
+				}, {
+					"name": "position",
+					"value": "lineInfo.lastStrongpoint"
+				}, {
+					"name": "tolerance",
+					"value": "200"
+				}, {
+					"name": "scriptName",
+					"value": "Skynet.MoveTo"
+				} ],
+				"scriptName": "Skynet.MoveTo"
+			} ],
+			"id": "GyANVs580vxGEDk9OnUsjMccSPoPyJje",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "Skynet.IsUnitAtPosition(radar, lineInfo.lastStrongpoint, 200)"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		}, {
+			"children": [],
+			"id": "TVmlYoTIV2xEs8HPPJAaUNEwc6oAilSf",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "LvytkKoWSGJv1GrjN2XtRUDNQ7GxP50p",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "radar ~= nil and lineInfo.lastStrongpoint ~= nil"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}
