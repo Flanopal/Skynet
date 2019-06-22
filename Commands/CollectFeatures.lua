@@ -38,6 +38,10 @@ function Run(self, units, parameter)
 	local position = parameter.position
 	local radius = parameter.radius
 
+	if not Spring.ValidUnitID(collector) then
+		return FAILURE
+	end
+
 	local cmdQLen = Spring.GetCommandQueue(collector, 0)
 	if not self.orderGiven then
 		Order(collector, CMD.RECLAIM,{position.x, position.y, position.z, radius},{})

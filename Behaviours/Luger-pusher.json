@@ -1,0 +1,156 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "luger"
+	}, {
+		"command": "Variable",
+		"name": "lineInfo"
+	} ],
+	"outputs": [],
+	"properties": {
+		"4xMgkSuLG9fovtjPQTBZpvyF9O0Obf73": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 294,
+			"x": 511,
+			"y": 10
+		},
+		"6hjJKE0AbQkFlsIys6IT8Zm1vMNJ0aw8": {
+			"height": 92,
+			"title": "Skynet.AttackAtPosition",
+			"width": 328,
+			"x": 1499,
+			"y": -28
+		},
+		"HyWyac9LgX7X6ceRbTxZyn8tg8hOkWCm": {
+			"height": 72,
+			"title": "Skynet.StopActions",
+			"width": 184,
+			"x": 823,
+			"y": -113
+		},
+		"bVpIpiTip0WNkwVfv6Cm8FxglQV8gIMO": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 494,
+			"y": 116
+		},
+		"fNNpFtbweSZVARUzwrgLz11tIIxg9Qya": {
+			"height": 88,
+			"title": "luaCondition",
+			"width": 208,
+			"x": 227,
+			"y": 18
+		},
+		"kppxvCAi5bn2ZVf0V7x8GQ2m4kLr6sDW": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 499,
+			"x": 963,
+			"y": 6
+		},
+		"p7Q6D3o4Tck8BMtf5t3komHgHKv5Dhyo": {
+			"height": 112,
+			"title": "Skynet.MoveTo",
+			"width": 324,
+			"x": 1538,
+			"y": 79
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "HyWyac9LgX7X6ceRbTxZyn8tg8hOkWCm",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "unit",
+					"value": "luger"
+				}, {
+					"name": "scriptName",
+					"value": "Skynet.StopActions"
+				} ],
+				"scriptName": "Skynet.StopActions"
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "6hjJKE0AbQkFlsIys6IT8Zm1vMNJ0aw8",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "luger"
+					}, {
+						"name": "position",
+						"value": "lineInfo[\"currentEnemyStrongpoint\"]"
+					}, {
+						"name": "scriptName",
+						"value": "Skynet.AttackAtPosition"
+					} ],
+					"scriptName": "Skynet.AttackAtPosition"
+				}, {
+					"children": [],
+					"id": "p7Q6D3o4Tck8BMtf5t3komHgHKv5Dhyo",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "luger"
+					}, {
+						"name": "position",
+						"value": "lineInfo[\"lastStrongpoint\"]"
+					}, {
+						"name": "tolerance",
+						"value": "150"
+					}, {
+						"name": "scriptName",
+						"value": "Skynet.MoveTo"
+					} ],
+					"scriptName": "Skynet.MoveTo"
+				} ],
+				"id": "kppxvCAi5bn2ZVf0V7x8GQ2m4kLr6sDW",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "Skynet.IsUnitAtPosition(luger, lineInfo[\"lastStrongpoint\"], 150)"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			} ],
+			"id": "4xMgkSuLG9fovtjPQTBZpvyF9O0Obf73",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "lineInfo.currentEnemyStrongpoint == nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		}, {
+			"children": [],
+			"id": "bVpIpiTip0WNkwVfv6Cm8FxglQV8gIMO",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "fNNpFtbweSZVARUzwrgLz11tIIxg9Qya",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "luger ~= nil"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}

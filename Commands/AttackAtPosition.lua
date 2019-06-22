@@ -4,7 +4,7 @@ function getInfo()
 		tooltip = "Shoots at position",
 		parameterDefs = {
 			{ 
-				name = "units",
+				name = "unit",
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
@@ -20,11 +20,14 @@ function getInfo()
 end
 
 function Run(self, units, parameter)
-    local units = parameter.units
-    local target = parameter.position
-    for i=1, #units do
-		Spring.GiveOrderToUnit(units[i]["id"], CMD.FIRE_STATE, {1}, {})
-        Spring.GiveOrderToUnit(units[i]["id"], CMD.ATTACK, {target.x, target.y, target.z}, {})
-    end
+    local unit = parameter.unit
+	local target = parameter.position
+	
+	if (not Spring.ValidUnitID(unit)) then
+		return FAILURE
+	end
+
+	Spring.GiveOrderToUnit(unit, CMD.FIRE_STATE, {1}, {})
+    Spring.GiveOrderToUnit(unit, CMD.ATTACK, {target.x, target.y, target.z}, {})
     return SUCCESS
 end

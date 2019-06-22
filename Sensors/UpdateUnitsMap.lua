@@ -10,14 +10,11 @@ local EVAL_PERIOD_DEFAULT = -1
 function checkUnitList(unitsMap, type, unit)
     local list = unitsMap[type]
     for i=1,#list do
-        if list[i]["id"] == unit then
+        if list[i] == unit then
             return
         end
     end
-    local info = {}
-    info["id"] = unit
-    info["state"] = "idle"
-    unitsMap[type][#unitsMap[type] + 1] = info
+    unitsMap[type][#unitsMap[type] + 1] = unit
 end
 
 return function(unitsMap)

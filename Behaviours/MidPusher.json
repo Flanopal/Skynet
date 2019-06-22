@@ -9,215 +9,222 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
+		"4P7IFuD3Mx7pbaSDvABnmEVdCk1uKB1G": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 594,
+			"y": 291
+		},
 		"7Y4YK0zamZhCkHG3ClcnAkHfGfYWN1b2": {
 			"height": 103,
 			"title": "store",
 			"width": 229,
-			"x": 1474,
-			"y": -309
+			"x": 1696,
+			"y": -393
 		},
 		"7cg47MjBvSESBhQFlZ1N9E3KDz8aTWJX": {
 			"height": 72,
 			"title": "Skynet.RecruitUnits",
 			"width": 185,
-			"x": 1407,
-			"y": 40
+			"x": 1580,
+			"y": 53
 		},
-		"8r4cm2Hr4jG8Lp59vPRzoCwAb20srMvF": {
-			"height": 94,
-			"title": "store",
-			"width": 320,
-			"x": 1400,
-			"y": 291
-		},
-		"C9M8M40P6KKak4mYgveJJhngdqsGIAag": {
-			"height": 94,
-			"title": "store",
-			"width": 333,
-			"x": 1767,
-			"y": 244
+		"8WSyR6MnM4W1D3PgGMlPfq26BrZ9RRPr": {
+			"height": 54,
+			"title": "repeat",
+			"width": 131,
+			"x": 633,
+			"y": 42
 		},
 		"Cs8RCdpAavAp8Q8r5tRZCycy3XiZHSPX": {
 			"height": 94,
 			"title": "store",
 			"width": 309,
-			"x": 1411,
-			"y": 172
+			"x": 1584,
+			"y": 185
+		},
+		"DB62nRAtgOVh1rxN8W1PSYo5unjwO1gZ": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 639,
+			"y": -58
 		},
 		"DMnB8v1pwyTAcFGNaGoIYcewly1z4t0k": {
 			"height": 92,
 			"title": "Skynet.UpgradeLine",
 			"width": 197,
-			"x": 1763,
-			"y": 372
-		},
-		"Euliw5wXtrycUDXEufITD3F4cjA6rx5L": {
-			"height": 94,
-			"title": "store",
-			"width": 198,
-			"x": 1035,
-			"y": -185
+			"x": 2086,
+			"y": 268
 		},
 		"GgljXqrQuPRNZCX6182zI2sBXSzskc9e": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 1408,
-			"y": 106
+			"x": 1581,
+			"y": 119
 		},
 		"IGIjFQW1GxYz54uxWfFduCqryZbfZxlL": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 206,
-			"y": 6
+			"x": 379,
+			"y": 19
+		},
+		"KxgXwHr7CYGUwc6I8I0TYTaanx3RyYkK": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 807,
+			"y": 61
 		},
 		"OTu2vMalAlylCnlkd9Vc0aaDmuwDU6l0": {
-			"height": 90,
+			"height": 88,
 			"title": "luaCondition",
-			"width": 436,
-			"x": 1227,
-			"y": 398
+			"width": 408,
+			"x": 1621,
+			"y": 281
+		},
+		"OacwEjIrMTHEGkGAECE6iPWPdwRyhsWB": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 781,
+			"y": 357
 		},
 		"RtFO9C7ffKbpEb3JmhdHPCpW32p6I6Ro": {
 			"height": 151,
 			"title": "reference",
 			"width": 189,
-			"x": 679,
-			"y": 180
+			"x": 1005,
+			"y": 394
+		},
+		"SjS7bma2Sp2V2Om4n29l8iLCy2AIj1JM": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 197,
+			"y": 9
 		},
 		"VuasStHLfBdyUyyaFON5yJsXxFManlaz": {
 			"height": 88,
 			"title": "luaCondition",
 			"width": 249,
-			"x": 913,
-			"y": 397
+			"x": 1326,
+			"y": 251
 		},
 		"WJ4UJdgVb1bKrcOkUUZ5mmSif0rNaaSW": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1232,
-			"y": 486
-		},
-		"e85Yq01CDrebRj79fXsOisaXP0OuqA8X": {
-			"height": 92,
-			"title": "store",
-			"width": 194,
-			"x": 1471,
-			"y": -487
-		},
-		"e9zuKAw7BxldPu970mIxDv0VtOuWOSi5": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 489,
-			"y": 70
-		},
-		"ekjgjg2Dfjd7GyuJ822lveA7JCs5cQt0": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 482,
-			"y": 318
+			"x": 1625,
+			"y": 365
 		},
 		"fFZjTAJEYSMWvb446gy3R2KemiV5XbEw": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 738,
-			"y": -53
+			"x": 1152,
+			"y": -110
 		},
-		"gnMbTj4rXcwzgycrCzoQamoL4Ur1lWzF": {
-			"height": 94,
-			"title": "store",
-			"width": 279,
-			"x": 1035,
-			"y": -269
+		"g8i93RyzrYO61EOO6MlS2fX5BM58ndZf": {
+			"height": 172,
+			"title": "reference",
+			"width": 200,
+			"x": 1226,
+			"y": 335
 		},
 		"gsuW7hDPB6SdogFWFr5dkWrBsDp4UbB3": {
 			"height": 94,
 			"title": "store",
 			"width": 485,
-			"x": 1408,
-			"y": -48
+			"x": 1586,
+			"y": -39
+		},
+		"hdkODzf4JOHX17VWPZmfv0g1szEpKwE5": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 814,
+			"y": 612
+		},
+		"ifwyyUlnbNn6Mc478mdSndCwuV3x9mom": {
+			"height": 94,
+			"title": "store",
+			"width": 305,
+			"x": 1383,
+			"y": -178
 		},
 		"il7bNbdoODz3P6hJaPhUKsW7MyEBRMiv": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1269,
-			"y": -283
+			"x": 1698,
+			"y": -294
 		},
 		"mOR8Ji9qS0Q6bdqYQWxJtMkwqO3B4ZTR": {
 			"height": 151,
 			"title": "reference",
-			"width": 181,
-			"x": 690,
-			"y": 21
+			"width": 205,
+			"x": 1044,
+			"y": 138
+		},
+		"oi9md53fAPEZPfUExYk4EgnICLK6GzSe": {
+			"height": 94,
+			"title": "store",
+			"width": 198,
+			"x": 1379,
+			"y": -276
 		},
 		"os6uiGycdzV6K0SZ03NxSweGlMyiiWBN": {
 			"height": 151,
 			"title": "reference",
-			"width": 233,
-			"x": 667,
-			"y": 327
+			"width": 218,
+			"x": 1001,
+			"y": 608
 		},
-		"r7DBjqNBsis1CeGmiPRgJsZeCWvArYjc": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 515,
-			"y": -49
+		"rGSOg8bgpaCzXiRxpmAXyiPy1hgurBX4": {
+			"height": 172,
+			"title": "reference",
+			"width": 200,
+			"x": 1226,
+			"y": 531
 		},
 		"rphONje9AnUL2rXGLJHnCJbLUvLGY9kk": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1095,
-			"y": 11
+			"x": 1399,
+			"y": -67
 		},
-		"saDCynEfJvTEYU7HN7E5GuB9QlO1MZp7": {
-			"height": 92,
-			"title": "store",
-			"width": 304,
-			"x": 1470,
-			"y": -398
+		"tnJOrrUpLIExbNePDN2pMmPpkd8uTqGm": {
+			"height": 172,
+			"title": "reference",
+			"width": 200,
+			"x": 1034,
+			"y": -23
 		},
-		"vuRx3u6ETJ4lCXBCF8wmplsqNToUQbkh": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 1273,
-			"y": -343
+		"w51yBM3P47KNH0gNljUjSiJmbSev2GB8": {
+			"height": 54,
+			"title": "repeat",
+			"width": 131,
+			"x": 601,
+			"y": 525
 		},
 		"xIU6TPlHJr9fAiHl0gbuMtmlv2yw9die": {
 			"height": 54,
 			"title": "success",
 			"width": 132,
-			"x": 1758,
-			"y": 463
-		},
-		"yYg8qNK3XhXg6tQg9unzosRN27claSTY": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 488,
-			"y": 200
-		},
-		"zaG4Z1I98opgFQIRFAdgnkZ8Y4VrGT15": {
-			"height": 94,
-			"title": "store",
-			"width": 364,
-			"x": 1031,
-			"y": -97
+			"x": 2081,
+			"y": 356
 		},
 		"ztaZZzxG6ufafQbB3OR99HxxzhMIRZeo": {
-			"height": 90,
+			"height": 88,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 1032,
-			"y": -350
+			"x": 1379,
+			"y": -372
 		}
 	},
 	"roles": [ {
@@ -230,36 +237,6 @@
 				"children": [ {
 					"children": [ {
 						"children": [ {
-							"children": [],
-							"id": "e85Yq01CDrebRj79fXsOisaXP0OuqA8X",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "var",
-								"value": "farks"
-							}, {
-								"name": "value",
-								"value": "{[\"ready\"] = false}"
-							}, {
-								"name": "scriptName",
-								"value": "store"
-							} ],
-							"scriptName": "store"
-						}, {
-							"children": [],
-							"id": "saDCynEfJvTEYU7HN7E5GuB9QlO1MZp7",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "var",
-								"value": "squad"
-							}, {
-								"name": "value",
-								"value": "{[\"ready\"] = false}"
-							}, {
-								"name": "scriptName",
-								"value": "store"
-							} ],
-							"scriptName": "store"
-						}, {
 							"children": [],
 							"id": "7Y4YK0zamZhCkHG3ClcnAkHfGfYWN1b2",
 							"nodeType": "luaCommand",
@@ -274,279 +251,288 @@
 								"value": "store"
 							} ],
 							"scriptName": "store"
-						} ],
-						"id": "vuRx3u6ETJ4lCXBCF8wmplsqNToUQbkh",
-						"nodeType": "sequence",
-						"parameters": []
-					}, {
-						"children": [],
-						"id": "il7bNbdoODz3P6hJaPhUKsW7MyEBRMiv",
-						"nodeType": "success",
-						"parameters": []
-					} ],
-					"id": "ztaZZzxG6ufafQbB3OR99HxxzhMIRZeo",
-					"nodeType": "luaCondition",
-					"parameters": [ {
-						"name": "expression",
-						"value": "unitsMap == nil"
-					}, {
-						"name": "repeat",
-						"value": "false"
-					} ]
-				}, {
-					"children": [],
-					"id": "gnMbTj4rXcwzgycrCzoQamoL4Ur1lWzF",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "farks"
-					}, {
-						"name": "value",
-						"value": "Skynet.CheckAliveFarks(farks)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
-				}, {
-					"children": [],
-					"id": "Euliw5wXtrycUDXEufITD3F4cjA6rx5L",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "missionInfo"
-					}, {
-						"name": "value",
-						"value": "core.MissionInfo()"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
-				}, {
-					"children": [],
-					"id": "zaG4Z1I98opgFQIRFAdgnkZ8Y4VrGT15",
-					"nodeType": "luaCommand",
-					"parameters": [ {
-						"name": "var",
-						"value": "lineInfo"
-					}, {
-						"name": "value",
-						"value": "Skynet.UpdateLineInfo(missionInfo, lineInfo)"
-					}, {
-						"name": "scriptName",
-						"value": "store"
-					} ],
-					"scriptName": "store"
-				}, {
-					"children": [ {
-						"children": [],
-						"id": "gsuW7hDPB6SdogFWFr5dkWrBsDp4UbB3",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "shopList"
-						}, {
-							"name": "value",
-							"value": "Skynet.PlanRecruiting(unitsMap, squad, farks, missionInfo.buy)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					}, {
-						"children": [],
-						"id": "7cg47MjBvSESBhQFlZ1N9E3KDz8aTWJX",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "units",
-							"value": "shopList"
-						}, {
-							"name": "scriptName",
-							"value": "Skynet.RecruitUnits"
-						} ],
-						"scriptName": "Skynet.RecruitUnits"
-					}, {
-						"children": [],
-						"id": "GgljXqrQuPRNZCX6182zI2sBXSzskc9e",
-						"nodeType": "wait",
-						"parameters": [ {
-							"name": "time",
-							"value": 1
-						} ]
-					}, {
-						"children": [],
-						"id": "Cs8RCdpAavAp8Q8r5tRZCycy3XiZHSPX",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "unitsMap"
-						}, {
-							"name": "value",
-							"value": "Skynet.UpdateUnitsMap(unitsMap)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					}, {
-						"children": [],
-						"id": "C9M8M40P6KKak4mYgveJJhngdqsGIAag",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "squad"
-						}, {
-							"name": "value",
-							"value": "Skynet.UpdateSquad(unitsMap, squad)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					}, {
-						"children": [],
-						"id": "8r4cm2Hr4jG8Lp59vPRzoCwAb20srMvF",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "farks"
-						}, {
-							"name": "value",
-							"value": "Skynet.UpdateFarks(unitsMap, farks)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
-					} ],
-					"id": "rphONje9AnUL2rXGLJHnCJbLUvLGY9kk",
-					"nodeType": "sequence",
-					"parameters": []
-				}, {
-					"children": [ {
-						"children": [ {
-							"children": [],
-							"id": "DMnB8v1pwyTAcFGNaGoIYcewly1z4t0k",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "lineName",
-								"value": "\"GoodMiddle\""
-							}, {
-								"name": "upgradeLevel",
-								"value": "5"
-							}, {
-								"name": "scriptName",
-								"value": "Skynet.UpgradeLine"
-							} ],
-							"scriptName": "Skynet.UpgradeLine"
 						}, {
 							"children": [],
-							"id": "xIU6TPlHJr9fAiHl0gbuMtmlv2yw9die",
+							"id": "il7bNbdoODz3P6hJaPhUKsW7MyEBRMiv",
 							"nodeType": "success",
 							"parameters": []
 						} ],
-						"id": "OTu2vMalAlylCnlkd9Vc0aaDmuwDU6l0",
+						"id": "ztaZZzxG6ufafQbB3OR99HxxzhMIRZeo",
 						"nodeType": "luaCondition",
 						"parameters": [ {
 							"name": "expression",
-							"value": "missionInfo.battleLines.GoodMiddle.extraSpawnSize < 11"
+							"value": "unitsMap == nil"
 						}, {
 							"name": "repeat",
 							"value": "false"
 						} ]
 					}, {
 						"children": [],
-						"id": "WJ4UJdgVb1bKrcOkUUZ5mmSif0rNaaSW",
-						"nodeType": "success",
-						"parameters": []
-					} ],
-					"id": "VuasStHLfBdyUyyaFON5yJsXxFManlaz",
-					"nodeType": "luaCondition",
-					"parameters": [ {
-						"name": "expression",
-						"value": "Skynet.GetTeamMetal() > 1500 "
+						"id": "oi9md53fAPEZPfUExYk4EgnICLK6GzSe",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "missionInfo"
+						}, {
+							"name": "value",
+							"value": "core.MissionInfo()"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
 					}, {
-						"name": "repeat",
-						"value": "false"
-					} ]
+						"children": [],
+						"id": "ifwyyUlnbNn6Mc478mdSndCwuV3x9mom",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "unitsMap"
+						}, {
+							"name": "value",
+							"value": "Skynet.CheckDeadUnits(unitsMap)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "gsuW7hDPB6SdogFWFr5dkWrBsDp4UbB3",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "shopList"
+							}, {
+								"name": "value",
+								"value": "Skynet.PlanRecruiting(unitsMap, missionInfo.buy)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "7cg47MjBvSESBhQFlZ1N9E3KDz8aTWJX",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "units",
+								"value": "shopList"
+							}, {
+								"name": "scriptName",
+								"value": "Skynet.RecruitUnits"
+							} ],
+							"scriptName": "Skynet.RecruitUnits"
+						}, {
+							"children": [],
+							"id": "GgljXqrQuPRNZCX6182zI2sBXSzskc9e",
+							"nodeType": "wait",
+							"parameters": [ {
+								"name": "time",
+								"value": 1
+							} ]
+						}, {
+							"children": [],
+							"id": "Cs8RCdpAavAp8Q8r5tRZCycy3XiZHSPX",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "unitsMap"
+							}, {
+								"name": "value",
+								"value": "Skynet.UpdateUnitsMap(unitsMap)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						} ],
+						"id": "rphONje9AnUL2rXGLJHnCJbLUvLGY9kk",
+						"nodeType": "sequence",
+						"parameters": []
+					}, {
+						"children": [ {
+							"children": [ {
+								"children": [],
+								"id": "DMnB8v1pwyTAcFGNaGoIYcewly1z4t0k",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "lineName",
+									"value": "\"GoodMiddle\""
+								}, {
+									"name": "upgradeLevel",
+									"value": "5"
+								}, {
+									"name": "scriptName",
+									"value": "Skynet.UpgradeLine"
+								} ],
+								"scriptName": "Skynet.UpgradeLine"
+							}, {
+								"children": [],
+								"id": "xIU6TPlHJr9fAiHl0gbuMtmlv2yw9die",
+								"nodeType": "success",
+								"parameters": []
+							} ],
+							"id": "OTu2vMalAlylCnlkd9Vc0aaDmuwDU6l0",
+							"nodeType": "luaCondition",
+							"parameters": [ {
+								"name": "expression",
+								"value": "missionInfo.battleLines.GoodMiddle.extraSpawnSize < 11"
+							}, {
+								"name": "repeat",
+								"value": "false"
+							} ]
+						}, {
+							"children": [],
+							"id": "WJ4UJdgVb1bKrcOkUUZ5mmSif0rNaaSW",
+							"nodeType": "success",
+							"parameters": []
+						} ],
+						"id": "VuasStHLfBdyUyyaFON5yJsXxFManlaz",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "Skynet.GetTeamMetal() > 1500 "
+						}, {
+							"name": "repeat",
+							"value": "false"
+						} ]
+					} ],
+					"id": "fFZjTAJEYSMWvb446gy3R2KemiV5XbEw",
+					"nodeType": "sequence",
+					"parameters": []
 				} ],
-				"id": "fFZjTAJEYSMWvb446gy3R2KemiV5XbEw",
-				"nodeType": "sequence",
+				"id": "DB62nRAtgOVh1rxN8W1PSYo5unjwO1gZ",
+				"nodeType": "repeat",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "tnJOrrUpLIExbNePDN2pMmPpkd8uTqGm",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "Skynet.UpdateLine"
+						} ],
+						"referenceInputs": [],
+						"referenceOutputs": [ {
+							"name": "lineInfo",
+							"value": "lineInfo"
+						} ]
+					}, {
+						"children": [],
+						"id": "mOR8Ji9qS0Q6bdqYQWxJtMkwqO3B4ZTR",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "Skynet.Lugers"
+						} ],
+						"referenceInputs": [ {
+							"name": "lineInfo",
+							"value": "lineInfo"
+						}, {
+							"name": "lugers",
+							"value": "unitsMap.lugers"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "KxgXwHr7CYGUwc6I8I0TYTaanx3RyYkK",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "8WSyR6MnM4W1D3PgGMlPfq26BrZ9RRPr",
+				"nodeType": "repeat",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "g8i93RyzrYO61EOO6MlS2fX5BM58ndZf",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "Skynet.UpdateLine"
+						} ],
+						"referenceInputs": [],
+						"referenceOutputs": [ {
+							"name": "lineInfo",
+							"value": "lineInfo"
+						} ]
+					}, {
+						"children": [],
+						"id": "RtFO9C7ffKbpEb3JmhdHPCpW32p6I6Ro",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "Skynet.Farks"
+						} ],
+						"referenceInputs": [ {
+							"name": "farks",
+							"value": "unitsMap.farks"
+						}, {
+							"name": "lineInfo",
+							"value": "lineInfo"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "OacwEjIrMTHEGkGAECE6iPWPdwRyhsWB",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "4P7IFuD3Mx7pbaSDvABnmEVdCk1uKB1G",
+				"nodeType": "repeat",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "rGSOg8bgpaCzXiRxpmAXyiPy1hgurBX4",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "Skynet.UpdateLine"
+						} ],
+						"referenceInputs": [],
+						"referenceOutputs": [ {
+							"name": "lineInfo",
+							"value": "lineInfo"
+						} ]
+					}, {
+						"children": [],
+						"id": "os6uiGycdzV6K0SZ03NxSweGlMyiiWBN",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "Skynet.Radar"
+						} ],
+						"referenceInputs": [ {
+							"name": "lineInfo",
+							"value": "lineInfo"
+						}, {
+							"name": "radar",
+							"value": "unitsMap.radars[1]"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "hdkODzf4JOHX17VWPZmfv0g1szEpKwE5",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "w51yBM3P47KNH0gNljUjSiJmbSev2GB8",
+				"nodeType": "repeat",
 				"parameters": []
 			} ],
-			"id": "r7DBjqNBsis1CeGmiPRgJsZeCWvArYjc",
-			"nodeType": "repeat",
-			"parameters": []
-		}, {
-			"children": [ {
-				"children": [],
-				"id": "mOR8Ji9qS0Q6bdqYQWxJtMkwqO3B4ZTR",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "Skynet.Lugers"
-				} ],
-				"referenceInputs": [ {
-					"name": "lineInfo",
-					"value": "lineInfo"
-				}, {
-					"name": "squad",
-					"value": "squad"
-				} ],
-				"referenceOutputs": []
-			} ],
-			"id": "e9zuKAw7BxldPu970mIxDv0VtOuWOSi5",
-			"nodeType": "repeat",
-			"parameters": []
-		}, {
-			"children": [ {
-				"children": [],
-				"id": "RtFO9C7ffKbpEb3JmhdHPCpW32p6I6Ro",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "Skynet.Farks"
-				} ],
-				"referenceInputs": [ {
-					"name": "farks",
-					"value": "farks"
-				}, {
-					"name": "lineInfo",
-					"value": "lineInfo"
-				} ],
-				"referenceOutputs": []
-			} ],
-			"id": "yYg8qNK3XhXg6tQg9unzosRN27claSTY",
-			"nodeType": "repeat",
-			"parameters": []
-		}, {
-			"children": [ {
-				"children": [],
-				"id": "os6uiGycdzV6K0SZ03NxSweGlMyiiWBN",
-				"nodeType": "reference",
-				"parameters": [ {
-					"name": "behaviourName",
-					"value": "Skynet.Radar"
-				} ],
-				"referenceInputs": [ {
-					"name": "lineInfo",
-					"value": "lineInfo"
-				}, {
-					"name": "radar",
-					"value": "unitsMap.radars[1]"
-				} ],
-				"referenceOutputs": []
-			} ],
-			"id": "ekjgjg2Dfjd7GyuJ822lveA7JCs5cQt0",
-			"nodeType": "repeat",
-			"parameters": []
+			"id": "IGIjFQW1GxYz54uxWfFduCqryZbfZxlL",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
 		} ],
-		"id": "IGIjFQW1GxYz54uxWfFduCqryZbfZxlL",
-		"nodeType": "parallel",
-		"parameters": [ {
-			"name": "mode",
-			"value": "all-success"
-		} ]
+		"id": "SjS7bma2Sp2V2Om4n29l8iLCy2AIj1JM",
+		"nodeType": "sequence",
+		"parameters": []
 	}
 }

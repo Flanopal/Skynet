@@ -38,11 +38,16 @@ function Run(self, units, parameter)
 	local tolerance = parameter.tolerance
 	local position = Vec3(Spring.GetUnitPosition(unit))
 
-	if position:Distance(target) < tolerance then
+	if not Spring.ValidUnitID(unit) then
+		return FAILURE
+	end
+
+	local dist = position:Distance(target)
+	if dist < tolerance then
 		return SUCCESS
 	else
 		MoveOrder(unit, CMD.MOVE, {target.x,target.y,target.z}, {})
-		return RUNNING
+		return SUCCESS
 	end
 end
 

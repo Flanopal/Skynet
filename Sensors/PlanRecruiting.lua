@@ -33,7 +33,7 @@ function checkUnit(list, uns, amount, unit, metal, prices)
 	end
 end
 
-return function(unitsMap, squad, farks, prices)
+return function(unitsMap, prices)
 	local list = {}
 	local metalMap = {}
 	metalMap["metal"] = Sensors.Skynet.GetTeamMetal()
@@ -43,16 +43,8 @@ return function(unitsMap, squad, farks, prices)
 	local farks = unitsMap["farks"]
 
 	checkUnit(list, radars, 1, "armseer", metalMap, prices)
-	if not squad.ready then
-		checkUnit(list, lugers, 12, "armmart", metalMap, prices)
-		checkUnit(list, atlases, 12, "armatlas", metalMap, prices)
-	end
-	if not farks.ready and #unitsMap.farks < 2 then
-		safeBuy(list, "armfark", metalMap, prices)
-		if #unitsMap.farks == 0 then
-			safeBuy(list, "armfark", metalMap, prices)
-		end
-	end
+	checkUnit(list, lugers, 15, "armmart", metalMap, prices)
+	checkUnit(list, farks, 2, "armfark", metalMap, prices)
 
 	return list
 end

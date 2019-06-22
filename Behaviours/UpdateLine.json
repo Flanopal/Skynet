@@ -1,0 +1,76 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 148,
+			"width": 224
+		}
+	},
+	"inputs": [],
+	"outputs": [ {
+		"name": "lineInfo"
+	} ],
+	"properties": {
+		"P2K8hP6ciWyuEUDiayj3XEnftOJLTqUk": {
+			"height": 94,
+			"title": "store",
+			"width": 198,
+			"x": 588,
+			"y": -43
+		},
+		"wz2OyZHLREEled8yN2zmNLhoHfoIL09J": {
+			"height": 94,
+			"title": "store",
+			"width": 364,
+			"x": 582,
+			"y": 49
+		},
+		"xZB5p9ffZkJyBmyGfEKpy2h0IvThnaDU": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 296,
+			"y": 48
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "P2K8hP6ciWyuEUDiayj3XEnftOJLTqUk",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "missionInfo"
+			}, {
+				"name": "value",
+				"value": "core.MissionInfo()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "wz2OyZHLREEled8yN2zmNLhoHfoIL09J",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "lineInfo"
+			}, {
+				"name": "value",
+				"value": "Skynet.UpdateLineInfo(missionInfo)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		} ],
+		"id": "xZB5p9ffZkJyBmyGfEKpy2h0IvThnaDU",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

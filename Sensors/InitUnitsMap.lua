@@ -17,10 +17,7 @@ function IsUnitOfType(ID, type)
 end
 
 function AppendNewUnit(list, unit)
-    local newState = {}
-    newState["id"] = unit
-    newState["state"] = "idle"
-    list[#list + 1] = newState
+    list[#list + 1] = unit
 end
 
 return function()
@@ -29,6 +26,7 @@ return function()
     local lugers = {}
     local radars = {}
     local peepers = {}
+    local farks = {}
     local unitz = Spring.GetTeamUnits(Spring.GetMyTeamID())
     for i=1, #unitz do
         if (IsUnitOfType(unitz[i], "armseer")) then
@@ -37,11 +35,13 @@ return function()
             AppendNewUnit(atlases, unitz[i])
         elseif (IsUnitOfType(unitz[i], "armmart")) then
             AppendNewUnit(lugers, unitz[i])
+        elseif (IsUnitOfType(unitz[i], "armfark")) then
+            AppendNewUnit(farks, unitz[i])
         end
     end
     unitsMap["atlases"] = atlases
     unitsMap["lugers"] = lugers
     unitsMap["radars"] = radars
-    unitsMap["farks"] = {}
+    unitsMap["farks"] = farks
     return unitsMap
 end

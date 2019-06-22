@@ -1,6 +1,6 @@
 local sensorInfo = {
 	name = "CheckDeadUnits",
-	desc = "Schedules a transport of all given units to positions (as understood by Atlas-transport tree)",
+	desc = "Checks dead units",
 	author = "AzGhort"
 }
 
@@ -11,7 +11,7 @@ return function(unitsMap)
     for unitType, units in pairs(unitsMap) do
         local un = {}
         for i=1,#units do
-            if Spring.ValidUnitID(units[i].id) then
+            if Spring.ValidUnitID(units[i]) then
                 un[#un + 1] = units[i]
             end
         end
